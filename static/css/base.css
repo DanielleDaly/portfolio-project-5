@@ -72,6 +72,18 @@ body {
     border: 1px solid #e0038b !important;
 }
 
+.bg-black {
+    background: #000 !important;
+}
+
+.bg-navy {
+    background: #130b2c !important;
+}
+
+.bg-pink {
+    background: #e0038b !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
