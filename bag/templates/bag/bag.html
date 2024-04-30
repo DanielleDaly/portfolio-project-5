@@ -41,7 +41,8 @@
                         </td>
                         <td class="p-3">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small text-muted">SKU: {{ item.product.isbn|upper }}</p>
+                            <p class="my-0"><strong>Cover: </strong>{% if item.product.available_in_hardback %}{{ item.cover|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="my-0 small text-muted">ISBN: {{ item.product.isbn|upper }}</p>
                         </td>
                         <td class="p-3">
                             <p class="my-0">${{ item.product.price }}</p>
