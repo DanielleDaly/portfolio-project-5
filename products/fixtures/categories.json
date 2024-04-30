@@ -1,0 +1,62 @@
+[
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "name": "classics",
+      "display_name": "Classics",
+      "description": "",
+      "image": "category-classics.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "name": "fiction",
+      "display_name": "Fiction",
+      "description": "",
+      "image": "category-fiction.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "non_fiction",
+      "display_name": "Non Fiction",
+      "description": "",
+      "image": "category-non_fiction.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "fantasy",
+      "display_name": "Fantasy",
+      "description": "",
+      "image": "category-fantasy.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+      "name": "journals_and_planners",
+      "display_name": "Journals & Planners",
+      "description": "",
+      "image": "category-journals_and_planners.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+      "name": "notebooks",
+      "display_name": "Notebooks",
+      "description": "",
+      "image": "category-notebooks.jpg"
+    }
+  }
+]

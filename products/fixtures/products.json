@@ -1,0 +1,882 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780571355884,
+      "name": "1984",
+      "author": "George Orwell",
+      "description": "Big Brother is watching you... Under the all-seeing eye of Big Brother, Winston Smith spends his days in the Ministry of Truth, rewriting the past for the Party. Despite constant surveillance and the ever-present threat of repression, he starts to inwardly question the regime. A note from a colleague - 'I love you' - marks the beginning of a secret affair that breaks all the rules. But what will happen when they are found out? This classic dystopian novel is a vision of life under a totalitarian regime, where every thought or action could bring the Thought Police to the door... Now with a stunningly sinister cover by Nathan Burton.",
+      "price": 13.04,
+      "category": 1,
+      "available_in_hardback": "True",
+      "image": "9780571355884.jpg",
+      "external_url": "https://www.easons.com/1984-george-orwell-9780571355884"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780141199498,
+      "name": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "description": "The Penguin English Library Edition of The Picture of Dorian Gray by Oscar Wilde 'I am jealous of everything whose beauty does not die. I am jealous of the portrait you have painted of me ... Why did you paint it? It will mock me some day - mock me horribly!' A story of evil, debauchery and scandal, Oscar Wilde's only novel tells of Dorian Gray, a beautiful yet corrupt man. When he wishes that a perfect portrait of himself would bear the signs of ageing in his place, the picture becomes his hideous secret, as it follows Dorian's own downward spiral into cruelty and depravity. The Picture of Dorian Gray is a masterpiece of the evil in men's hearts, and is as controversial and alluring as Wilde himself. The Penguin English Library - 100 editions of the best fiction in English, from the eighteenth century and the very first novels to the beginning of the First World War.",
+      "price": 9.27,
+      "category": 1,
+      "available_in_hardback": "True",
+      "image": "9780141199498.jpg",
+      "external_url": "https://www.easons.com/the-picture-of-dorian-gray-oscar-wilde-9780141199498"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780008182205,
+      "name": "Moby Dick",
+      "author": "Herman Melville",
+      "description": "Few literary masterpieces cast quite as awesome a shadow as Herman Melville's Moby Dick. Captain Ahab's quest for the white whale is a timeless epic - a thrilling tale of vengeance and obsession, and a searing parable about humanity lost in a universe of moral ambiguity. Inspired by true events, Moby Dick is a work of astonishing psychological depth. It is perhaps the greatest sea story ever told and one of the great classics of literature. 'Towards thee I roll, thou all-destroying but unconquering whale; to the last I grapple with thee; from hell's heart I stab at thee; for hate's sake I spit my last breath at thee.'",
+      "price": 9.27,
+      "category": 1,
+      "available_in_hardback": "True",
+      "image": "9780008182205.jpg",
+      "external_url": "https://www.easons.com/moby-dick-herman-melville-9780008182205"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781847494870,
+      "name": "Dracula",
+      "author": "Bram Stoker",
+      "description": "Regarded as one of the most influential horror stories of all time and the inspiration for countless literary spin-offs, the tale of the young Englishman Jonathan Harker's journey into the very heart of Count Dracula's evil realm remains a compelling read to this day. A thriller of hypnotic power, a dark exploration of human passion, mythology and the paranormal, and a plain old-fashioned masterpiece of storytelling, the nightmarish saga of Dracula is one of the enduring classics of supernatural fiction.",
+      "price": 8.12,
+      "category": 1,
+      "available_in_hardback": "True",
+      "image": "9781847494870.jpg",
+      "external_url": "https://www.easons.com/dracula-bram-stoker-9781847494870"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781847492586,
+      "name": "The Great Gatsby",
+      "author": "F.Scott Fitzgerald",
+      "description": "Invited to an extravagantly lavish party in a Long Island mansion, Nick Carraway, a young bachelor who has just settled in the neighbouring cottage, is intrigued by the mysterious host, Jay Gatsby, a flamboyant but reserved self-made man with murky business interests and a shadowy past. As the two men strike up an unlikely friendship, details of Gatsby's impossible love for amarried woman emerge, until events spiral into tragedy. Regarded as Fitzgerald's masterpiece and one of the greatest novels of American literature, The Great Gatsby is a vivid chronicle of the excesses and decadence of the Jazz Age, as well as a timeless cautionary critique of the American dream.",
+      "price": 8.12,
+      "category": 1,
+      "available_in_hardback": "True",
+      "image": "9781847492586.jpg",
+      "external_url": "https://www.easons.com/the-great-gatsby-f-scott-fitzgerald-9781847492586"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780241950432,
+      "name": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "description": "'If you really want to hear about it, the first thing you'll probably want to know is where I was born and what my lousy childhood was like, and how my parents were occupied and all before they had me, and all that David Copperfield kind of crap, but I don't feel like going into it, if you want to know the truth.' The first of J. D. Salinger's four books to be published, The Catcher in the Rye is one of the most widely read and beloved of all contemporary American novels. 'The handbook of the adolescent heart' The New Yorker",
+      "price": 11.59,
+      "category": 1,
+      "available_in_hardback": "True",
+      "image": "9780241950432.jpg",
+      "external_url": "https://www.easons.com/the-catcher-in-the-rye-j-d-salinger-9780241950432"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780571273577,
+      "name": "Lord of the Flies",
+      "author": "William Golding",
+      "description": "William Golding's Lord of the Flies is a dystopian classic: 'exciting, relevant and thought-provoking' (Stephen King). When a group of schoolboys are stranded on a desert island, what could go wrong? 'One of my favorite books - I read it every couple of years.' (Suzanne Collins, author of The Hunger Games ) A plane crashes on a desert island. The only survivors are a group of schoolboys. By day, they discover fantastic wildlife and dazzling beaches, learning to survive; at night, they are haunted by nightmares of a primitive beast. Orphaned by society, it isn't long before their innocent childhood games devolve into a savage, murderous hunt ... 'Stands out mightily in my memory ... Such a strong statement about the human heart.' (Patricia Cornwell) 'Terrifying and haunting.' (Kingsley Amis) 'Beautifully written, tragic and provocative.' (E. M. Forster) ONE OF THE BBC'S ICONIC 'NOVELS THAT SHAPED OUR WORLD' What readers are saying: 'Every real human being should read this ... This is what we are.' 'It's brilliant, it's captivating, it's thought provoking and brutal and for some, its truly terrifying.' 'It can be read and re-read many times, and every time something new will appear.' 'There is a reason why this is studied at school ... Excellent read.' 'This is one of the few books I've read that I keep on my Kindle to read again.' 'I revisit this every few years and it's always fresh and impressive ... One of the best books I've ever read.'",
+      "price": 11.59,
+      "category": 1,
+      "available_in_hardback": "True",
+      "image": "9780571273577.jpg",
+      "external_url": "https://www.easons.com/lord-of-the-flies-william-golding-9780571273577"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780141199078,
+      "name": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "description": "The Penguin English Library Edition of Pride and Prejudice by Jane Austen 'No sooner had he made it clear to himself and his friends that she had hardly a good feature in her face, than he began to find it was rendered uncommonly intelligent by the beautiful expression of her dark eyes ...' When Elizabeth Bennet first meets eligible bachelor Fitzwilliam Darcy, she thinks him arrogant and conceited; he is indifferent to her good looks and lively mind. When she later discovers that Darcy has involved himself in the troubled relationship between his friend Bingley and her beloved sister Jane, she is determined to dislike him more than ever. In the sparkling comedy of manners that follows, Jane Austen shows the folly of judging by first impressions and superbly evokes the friendships, gossip and snobberies of provincial middle-class life. The Penguin English Library - 100 editions of the best fiction in English, from the eighteenth century and the very first novels to the beginning of the First World War.",
+      "price": 9.27,
+      "category": 1,
+      "available_in_hardback": "True",
+      "image": "9780141199078.jpg",
+      "external_url": "https://www.easons.com/pride-and-prejudice-jane-austen-9780141199078"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780141199085,
+      "name": "Wuthering Heights",
+      "author": "Emily Bronte",
+      "description": "The Penguin English Library Edition of Wuthering Heights by Emily Brontë 'May you not rest, as long as I am living. You said I killed you - haunt me, then' Lockwood, the new tenant of Thrushcross Grange on the bleak Yorkshire moors, is forced to seek shelter one night at Wuthering Heights, the home of his landlord. There he discovers the history of the tempestuous events that took place years before: of the intense passion between the foundling Heathcliff and Catherine Earnshaw, and her betrayal of him. As Heathcliff's bitterness and vengeance is visited upon the next generation, their innocent heirs must struggle to escape the legacy of the past. The Penguin English Library - 100 editions of the best fiction in English, from the eighteenth century and the very first novels to the beginning of the First World War.",
+      "price": 9.27,
+      "category": 1,
+      "available_in_hardback": "True",
+      "image": "9780141199085.jpg",
+      "external_url": "https://www.easons.com/wuthering-heights-emily-bronte-9780141199085"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781912714964,
+      "name": "A Tale of Two Cities",
+      "author": "Charles Dickens",
+      "description": "A Tale of Two Cities tells the story of Mr. Jarvis Lorry, an official of Tellson's Bank in London who accompanies Lucie Manette to Paris. He has information that her father, Dr. Alexandre Manette, who had disappeared eighteen years ago, is alive. He had been wrongfully imprisoned in the Bastille and left there to die. Lucie is shaken when she learns that her father is still living. On reaching Paris, they go to the house of Monsieur Defarge, a wine-seller. He had been Dr. Manette's servant and has taken care of him after his release from prison. Both Mr. Lorry and Lucie are shocked to see the terrible state Doctor Manette is in. He has aged prematurely, having lost both his memory and his sense. He spends his time cobbling shoes. The revolutionary ardor and hatred against oppression are fanned every time Defarge and his associates look at this wreck of a man, who has been a victim of the aristocracy. Mr. Lorry and Lucie take her father back to London. With love and compassion, Lucie plans to nurse her father back to health and sanity. Five years later, in 1780, a young Frenchman, named Charles Darnay, is accused of being a traitor and a spy. Lucie and her father are reluctant witnesses for the prosecution, as they had met him while travelling from Calais to Dover. Lucie stresses the good qualities of the accused while imparting her testimony. The evidence against him is overwhelming as the prosecution produces a number of witnesses who swear that he is a spy. The onlookers, too, mentally condemn him and are waiting for the death sentence to be pronounced. However, it is Sydney Carton, an advocate present in the courtroom, who points out the resemblance between the prisoner and himself to the defense lawyer Mr. Stryver. The jury thus realizes that it could be a case of mistaken identity, and Darnay is acquitted. Years pass, and both Darnay and Carton fall in love with Lucie Manette. Carton is a lawyer who wastes his life in drinking and idling. Lucie has no interest in him; instead, she marries Darnay. He is a French aristocrat who has renounced his inheritance and now lives in London under an assumed name and works as a tutor. His uncle, the Marquis St. Evremonde, is a notorious man renowned for his cruelty and callousness; he has lived the life of a profligate and has no respect for human life. This is emphasized in two incidents that take place while he drives home from a royal reception. He kills a child on the streets and refuses to help a poor widow in need of a tombstone to mark her husband's grave. That very night he is murdered in bed. The French Revolution breaks out in all its fury with the storming of the Bastille. In London, Darnay has been happily married to Lucie for eleven years, and they have a beautiful daughter. On hearing that Gabelle, his steward in France, has been erroneously arrested, Darnay secretly returns to Paris to save his faithful servant. He is caught and imprisoned. On hearing of her husband's capture, Lucie, her daughter, Dr. Manette, and Mr. Lorry rush to Paris to save him. Dr. Manette, himself a victim of oppression, convinces the people of his son-in-law's innocence, and Darnay is discharged. Madame Defarge, however, seeks personal revenge against the Evremonde family, for the cruel Marquis had molested her sister and killed her brother. Largely because of her, Darnay is re-arrested, tried, and sentenced to death. There is no hope of saving him. Even the lives of Lucie and her daughter are in danger as the hard-core revolutionaries, like the Defarges, would like to eliminate anyone who has a connection with aristocracy. The story ends dramatically when Sydney Carton decides to save Darnay's life by taking his place. He gains entry into the prison, drugs Darnay, and with the help of Mr. Lorry gets him out of danger. The Darnay family flees back to England while Carton sacrifices his life for Darnay, his look-alike. The sacrifice is made to fulfill a promise to Lucie whom he loves. Carton feels noble about his action and knows that he will live in the hearts of the Darnays forever.",
+      "price": 23.20,
+      "category": 1,
+      "available_in_hardback": "True",
+      "image": "9781912714964.jpg",
+      "external_url": "https://www.easons.com/a-tale-of-two-cities-charles-dickens-9781912714964"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781444715453,
+      "name": "You Are Here",
+      "author": "David Nicholls",
+      "description": "Sometimes you need to get lost to find your way. Marnie is stuck.Stuck working alone in her London flat, stuck battling the long afternoons and a life that increasingly feels like it’s passing her by. Michael is coming undone.Reeling from his wife’s departure, increasingly reclusive, taking himself on long, solitary walks across the moors and fells. When a persistent mutual friend and some very English weather conspire to bring them together, Marnie and Michael suddenly find themselves alone on the most epic of walks and on the precipice of a new friendship. But can it survive the journey? A new love story by beloved bestseller David Nicholls, You Are Here is a novel of first encounters, second chances and finding the way home.",
+      "price": 16.99,
+      "category": 2,
+      "image": "9781444715453.jpg",
+      "external_url": "https://www.easons.com/you-are-here-tpb-david-nicholls-9781444715453"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780241441152,
+      "name": "My Favourite Mistake",
+      "author": "Marian Keys",
+      "description": "Anna has just lost her taste for the big apple... Anna has a life to envy. An apartment in New York. A well-meaning (too well-meaning?) partner. And a high-flying job in beauty PR. Who wouldn’t want all that? Anna - it turns out. Turning a minor mid-life crisis into a major life event she packs it in, heads back to Ireland, and gets a PR job for a super-high-end coastal retreat. Tougher than it sounds. Newsflash: the locals hate it. So much so, there have been threats - and violence. Anna, however, worked in the beauty industry. There’s no ugliness she hasn’t seen. No wrinkle she can’t smooth over. Anna’s got this. Until she discovers that leaving New York doesn’t mean escaping her mistakes. Once upon a time she’d had a best friend. Once upon a time she’d loved a man. Now she has neither. And now she has to face them.",
+      "price": 16.99,
+      "category": 2,
+      "image": "9780241441152.jpg",
+      "external_url": "https://www.easons.com/my-favourite-mistake-tpb-marian-keyes-9780241441152"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780857529831,
+      "name": "Earth",
+      "author": "John Boyne",
+      "description": "It’s the tabloid sensation of the year: two well-known footballers standing in the dock, charged with sexual assault, a series of vile text messages pointing towards their guilt. As the trial unfolds, Evan Keogh reflects on the events that have led him to this moment. Since leaving his island home, his life has been a lie on many levels. He’s a talented footballer who wanted to be an artist. A gay man in a sport that rejects diversity. A defendant whose knowledge of what took place on that fateful night threatens more than just his freedom or career. The jury will deliver a verdict but, before they do, Evan must judge for himself whether the man he has become is the man he wanted to be.",
+      "price": 13.99,
+      "category": 2,
+      "image": "9780857529831.jpg",
+      "external_url": "https://www.easons.com/earth-hb-john-boyne-9780857529831"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780349439358,
+      "name": "Taming 7",
+      "author": "Chloe Walsh",
+      "description": "Taming 7 is an epic and unforgettable love story in the international bestselling and TikTok-phenomenon The Boys of Tommen series, from Chloe Walsh. The power and pain of first love has never been more deeply felt than in Chloe Walsh's extraordinary stories about the irresistible Boys of Tommen, which will give you the ultimate book hangover. She's the quintessential sunshine girl. He's the lovable class clown. But storm clouds are rolling in, and this Tommen boy is about to get serious. Tommen's cheeky lad, Gerard 'Gibsie' Gibson, is a comedian at heart, but underneath his happy-go-lucky-nature lurks a broken boy, tortured by the events of his past. Using humour to cope with his demons, Gibsie hides everything from the world. Only one person knows who he truly is on the inside. His friend's little sister. His Claire-bear. Enveloped in sunshine, Claire Biggs has spent her whole life adoring the boy across the street. Her brother's friend. Seeing a side to Gerard that no one else sees, Claire is determined to tame her wild-at-heart childhood best friend. But when the unexpected occurs and lines are crossed, will Gibsie and Claire's friendship survive? Will it blossom into something more, or will they lose themselves in the riptide? Want more of The Boys of Tommen? Read all of the series so far: Binding 13 Keeping 13 Saving 6 Redeeming 6 Taming 7",
+      "price": 10.99,
+      "category": 2,
+      "image": "9780349439358.jpg",
+      "external_url": "https://www.easons.com/taming-7-chloe-walsh-9780349439358"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780751582420,
+      "name": "In Her Place",
+      "author": "Edel Coffey",
+      "description": "From the #1 bestselling author of Breaking Point and winner of Crime Novel of the Year at the An Post Irish Book Awards. Who is the other woman? That's for you to decide. Ann devoted years to her mother's care. Now, in a bid to escape the emptiness of her old flat and the paperwork caused by her death, Ann finds herself in a bar upstate. She has been so good for so long, she deserves a little fun. Justin is also grieving but his wife is still alive. She has been dying for a long time and they say she doesn't have long left. He deserves a little fun, too. Justin asks Ann to move in just a few weeks later. A million miles away from her lonely life in New York, here Ann finds a world where she is wanted and needed by both Justin and his little girl, Sophie. But just as Ann finds that she is pregnant, Justin receives news. Unexpectedly, his wife's drug trial has been a success. Deborah is coming home. Ann doesn't quite know what to do. The best news is the very worst news. And who is really the other woman in this situation? All she knows is that she finally likes her life and she plans to keep it.",
+      "price": 14.99,
+      "category": 2,
+      "image": "9780751582420.jpg",
+      "external_url": "https://www.easons.com/in-her-place-tpb-edel-coffey-9780751582420"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781035035595,
+      "name": "Calamity of Souls",
+      "author": "David Baldacci",
+      "description": "Set in the tumultuous year of 1968 in southern Virginia, a racially-charged murder case sets a duo of white and Black lawyers against a deeply unfair system as they work to defend their wrongfully-accused Black defendants in this courtroom drama from the number one bestselling author David Baldacci. Jack Lee is a white lawyer from Freeman County, Virginia, who has never done anything to push back against racism, until he decides to represent JeromeWashington, a Black man charged with brutally killing an elderly and wealthy white couple. Doubting his decision, Lee fears that his legal skills may not be enough to prevail in a case where the odds are already stacked against both him and his client.And he quickly finds himself out of his depth when he realizes that what is at stake is far greater than the outcome of a murder trial.Desiree DuBose is a Black lawyer from Chicago who has devoted her life to furthering the causes of justice and equality for everyone. She comes to Freeman County and enters a fractious and unwieldy partnership with Lee in a legal battle against the best prosecutor in the Commonwealth. Yet DuBose is also aware that powerful outside forces are at work to blunt the victories achieved by the Civil Rights era.Lee and DuBose could not be more dissimilar. On their own, neither one can stop the prosecution's deliberate march towards a guilty verdict and the electric chair. But together, the pair fight for what once seemed impossible: a chance for a fair trial and true justice.",
+      "price": 14.99,
+      "category": 2,
+      "image": "9781035035595.jpg",
+      "external_url": "https://www.easons.com/calamity-of-souls-tpb-david-baldacci-9781035035595"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780008405038,
+      "name": "Stranger in the Family",
+      "author": "Jane Casey",
+      "description": "The gripping new thriller featuring DS Maeve Kerrigan and DI Josh Derwent from the Top Ten Sunday Times bestselling author Every mother's worst nightmare... When nine-year-old Rosalie Marshall vanished from her bed one summer night, her disappearance tore her family apart. Now, sixteen years later, her mother Helena is found dead, her husband by her side. It looks like a straightforward murder-suicide but DS Maeve Kerrigan and DI Josh Derwent soon discover nothing about this case is straightforward. The Marshalls have been keeping secrets, and they aren't alone. Josh has been holding something back too – something that could change everything for Maeve. But one person is prepared to kill to hide the truth. Until Maeve finds out what happened to Rosalie, no one will be safe...",
+      "price": 11.99,
+      "category": 2,
+      "image": "9780008405038.jpg",
+      "external_url": "https://www.easons.com/stranger-in-the-family-tpb-jane-casey-9780008405038"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780241353967,
+      "name": "The Bee Sting",
+      "author": "Paul Murray",
+      "description": "Irresistibly funny, wise and thought-provoking - a tragicomic tour de force about family, fortune, and the struggle to be a good person when the world is falling apart... The Barnes family is in trouble. Dickie's once-lucrative car business is going under - but rather than face the music, he's spending his days in the woods, building an apocalypse-proof bunker with a renegade handyman. His wife Imelda is selling off her jewellery on eBay while their teenage daughter Cass, formerly top of her class, seems determined to binge-drink her way to her final exams. And twelve-year-old PJ is putting the final touches to his grand plan to run away from home. Where did it all go wrong? A patch of ice on the tarmac, a casual favour to a charming stranger, a bee caught beneath a bridal veil - can a single moment of bad luck change the direction of a life? And if the story has already been written - is there still time to find a happy ending?",
+      "price": 13.99,
+      "category": 2,
+      "image": "9780241353967.jpg",
+      "external_url": "https://www.easons.com/the-bee-sting-paul-murray-9780241353967"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780008528638,
+      "name": "The Lighthouse Secret",
+      "author": "Carmel Harrington",
+      "description": "Family secrets never stay buried... 1951, Ireland On the windswept Cork coast, the lighthouse-keepers’ wives wait, watching the sea. Their husbands are coming home. But one secret can never be revealed. 2023, Maine Decades later, Mollie Kenefick, receives an anonymous note: Family secrets never stay buried. Theonly person she can ask is her grandmother – however, Beth made a vow that she swore never to break. But someone knows what happened that summer in 1951, and it seems they’re not happy keeping... > silent...",
+      "price": 11.99,
+      "category": 2,
+      "image": "9780008528638.jpg",
+      "external_url": "https://www.easons.com/lighthouse-secret-tpb-carmel-harrington-9780008528638"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780008544966,
+      "name": "Sisterhood",
+      "author": "Cathy Kelly",
+      "description": "Two sisters. One secret. A journey to learn who they really are... As the waves crash on to a wild Atlantic beach, Lou is at a crossroads. For the first time ever, just giving up seems like an option. In just one night, at her own 50th birthday, her world has imploded. Her mother has kept a secret hidden all her life. And it changes everything. Before Lou can take another step, she needs to get to the bottom of the shocking truth that alters who she really is. Along with her sister, Toni, who is facing her own life crisis, the two women sets out on a life-changing journey – one that will take them through Ireland’s wildest coastline and to Sicily’s sun-baked rocky shores. It will also take Lou deep into her relationships with her mother, her sister and her daughter to figure out how to stop pleasing everyone else – and carve out who she really wants to be.",
+      "price": 13.99,
+      "category": 2,
+      "image": "9780008544966.jpg",
+      "external_url": "https://www.easons.com/sisterhood-tpb-cathy-kelly-9780008544966"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781805461906,
+      "name": "Twelve Sheep",
+      "author": "John Connell",
+      "description": "For John Connell, the lambing season on his County Longford farm begins in the autumn. In the sheep shed, he surveys the dozen females in his care and contemplates the work ahead as the season slowly turns to winter, then spring. The twelve sheep have come into his life at just the right moment. After years of hard work, John felt a deep tiredness creeping up on him, a sadness that he couldn't shrug off. Having always sought spiritual guidance, he comes to realise that, in addition to the soothing words of literature and philosophy, perhaps the way ahead involves this simple flock of sheep. In the hard work of livestock rearing, in the long nights in the shed helping the sheep to lamb, he can reflect on what life truly means. Like the flock that he shepherds, this book is both simple and profound, a meditation on the rituals of farming life and a primer on the lessons that nature can teach us. As spring returns and the sheep and their lambs are released into the fields, skipping with joy, John recalls the words of Henry David Thoreau, reminding us to 'live in each season as it passes.'",
+      "price": 13.99,
+      "category": 3,
+      "available_in_hardback": "True",
+      "image": "9781805461906.jpg",
+      "external_url": "https://www.easons.com/twelve-sheep-john-connell-9781805461906"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780717199945,
+      "name": "This is Not a Self Help Book",
+      "author": "Mark Mehigan",
+      "description": "Much of Mark Mehigan’s twenties read like a ‘how-to’ manual: How to get very drunk without raising people’s suspicions you might be an alcoholic. Although outwardly successful, nearing 30 he was hurtling towards a nervous breakdown and using payday loans to fund a burgeoning cocaine habit.Eventually Mark became sick and tired of being sick and tired. His only choice was to finally relinquish control and ask for help. In doing so he discovered contentment and freedom. This new way of life embraced letting stuff go. Giving things up. It meant trying to find out how to live without relying on destructive behavioural patterns to cope with life.Mark’s story is one of hope: everything genuinely can get better. Perhaps Mark’s story can be the spark that ignites that journey for you, or at the very least a guidebook on how not to mess up your life. Either way, it’s definitely not a self-help book.",
+      "price": 17.99,
+      "category": 3,
+      "available_in_hardback": "True",
+      "image": "9780717199945.jpg",
+      "external_url": "https://www.easons.com/this-is-not-a-self-help-book-pb-mark-mehigan-9780717199945"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780241996768,
+      "name": "Poor",
+      "author": "Katriona O'Sullivan",
+      "description": "EASON FAVOURITE BOOK OF THE YEAR 2023. The No. 1 Bestseller Biography of the Year, Irish Book Awards 2023 The Last Word Listeners' Choice Award, Irish Book Awards 2023. 'One of the best [books] I have read about the complexities of poverty . . . one of the most remarkable people you will ever meet' Guardian. Like young girls everywhere Katriona O'Sullivan grew up bright, enthusiastic, curious. But she was also surrounded by abject poverty and chaos, and after she became pregnant and homeless at 15, what followed was five years of barely surviving. Yet today Katriona is an award-winning academic whose work explores barriers to education for girls like her. What set Katriona on this unexpected path were the mentors and supporters who truly saw her. The teachers who showed her how to wash in the school toilets or turned up at her door to convince her to sit at least one GCSE. The community worker who encouraged her to apply for training schemes. The friend who introduced Katriona to Trinity College's access program while she was a cleaner. Simple acts that would help her turn her life around. Told with warmth, clarity and compassion - compassion for her parents, for her younger self, for others - Poor is both an astonishing personal testimony and an impassioned plea for the future of our children.",
+      "price": 12.99,
+      "category": 3,
+      "available_in_hardback": "True",
+      "image": "9780241996768.jpg",
+      "external_url": "https://www.easons.com/poor-katriona-osullivan-9780241996768"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780717199150,
+      "name": "Sleep Well",
+      "author": "Fiona Brennan",
+      "description": "Imagine getting into bed every evening and drifting off quickly into a deep and restorative sleep, and then waking up refreshed, glowing with life and vitality. You feel calm and powerful, safe in the knowledge that you can cope with anything that comes your way. Fiona Brennan has helped thousands of people transform their relationship with sleep by using her unique Sleep Well Formula, which is based on cutting-edge science and hypnotherapy practices. Over the course of the eight-week Sleep Well programme, you will cultivate eight transformative habits to optimise your sleep, resulting in long-term benefits to your health, mood and productivity. The unique blend of psychology, spirituality and science helps you to wake up fully to who you are and develop faith in your innate ability to get to and stay asleep – every night.",
+      "price": 18.99,
+      "category": 3,
+      "available_in_hardback": "True",
+      "image": "9780717199150.jpg",
+      "external_url": "https://www.easons.com/sleep-well-pb-fiona-brennan-9780717199150"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780241688274,
+      "name": "The Trading Game",
+      "author": "Gary Stevenson",
+      "description": "*NO.1 SUNDAY TIMES BESTSELLER* 'An unforgettable story of greed, financial madness and moral decay' Rory Stewart 'Hilarious, shocking and deeply sad - often in the same sentence' Sunday Times 'The Wolf of Wall Street with a moral compass' Irvine Welsh An outrageous, white-knuckle journey to the dark heart of an intoxicating world - from someone who survived the trading game and then blew it all wide open 'If you were gonna rob a bank, and you saw the vault door there, left open, what would you do? Would you wait around? Ever since he was a kid, kicking broken footballs on the streets of East London in the shadow of Canary Wharf's skyscrapers, Gary wanted something better. Something a whole lot bigger. Then he won a competition run by a bank: 'The Trading Game'. The prize: a golden ticket to a new life, as the youngest trader in the whole city. A place where you could make more money than you'd ever imagined. Where your colleagues are dysfunctional maths geniuses, overfed public schoolboys and borderline psychopaths, yet they start to feel like family. Where soon you're the bank's most profitable trader, dealing in nearly a trillion dollars. A day . Where you dream of numbers in your sleep - and then stop sleeping at all. But what happens when winning starts to feel like losing? When the easiest way to make money is to bet on millions becoming poorer and poorer - and, as the economy starts slipping off a precipice, your own sanity starts slipping with it? You want to stop, but you can't. Because nobody ever leaves . Would you stick, or quit? Even if it meant risking everything? Number 1 Sunday Times bestseller, March 2024.",
+      "price": 18.99,
+      "category": 3,
+      "available_in_hardback": "True",
+      "image": "9780241688274.jpg",
+      "external_url": "https://www.easons.com/the-trading-game-gary-stevenson-9780241688274"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781844886432,
+      "name": "Anna's Game Plan",
+      "author": "Anna Geary",
+      "description": "'An incredible life-changing guide to achieving true happiness and success' Kathryn Thomas As an All-Ireland winning camogie player, Anna Geary learned that the right mindset unlocks everything. It builds confidence, brings success and provides perspective when things don't go to plan. Sharing the power of mindset has been at the heart of her post-playing career as a speaker, trainer, health and well-being coach and even as a broadcaster. Because daily life is so full-on our mindsets can get disrupted and make us stress about the wrong things. In Anna's Game Plan , Anna shares the powerful ways that managing your mindset can be life-changing. Based on her extensive experience in nurturing healthy attitudes to mind and body, Anna lays out five practical tactics - Acceptance, Purpose, Consistency, Challenge, Kindness - that can equip you with a practical toolkit to banish overwhelm and focus on what's really important. Packed with honest relatable stories from Anna's own life, as well as fascinating insights from the behavioural sciences, Anna's Game Plan is an essential one-stop guide to building confidence and creating the life you deserve. Change your mindset. Change your life! 'Anna's Game Plan will help you to be the best version of you' Karl Henry",
+      "price": 17.99,
+      "category": 3,
+      "available_in_hardback": "True",
+      "image": "9781844886432.jpg",
+      "external_url": "https://www.easons.com/annas-game-plan-anna-geary-9781844886432"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781529914511,
+      "name": "Bored of Lunch",
+      "author": "Nathan Anthony",
+      "description": "FROM THE AUTHOR OF THE NO.1 BESTSELLING AIR FRYER BOOK OF ALL TIME All NEW super-speedy, calorie-counted air fryer recipes so you can have delicious, healthy food on the table in 30 minutes or less. From Nathan Anthony, author of three instant no.1 bestsellers, comes a brand new book of quick, easy and healthy recipes for your air fryer. With dishes ready in 30 minutes or less (including prep time!), this is effortless cooking to maximise flavour while minimising cooking time. Every recipe is calorie counted, so you can have lighter versions of your favourites dishes on the table in just half an hour, making mealtimes and life that bit easier. As a lower-energy alternative to a conventional oven, air fryers are a cost-efficient way to make all your favourite dishes and save on your household energy bill. And with a focus on everyday, easy-to-find ingredients, this is food you can cook without breaking the bank or even a sweat. The incredible, quick recipes include Salt and Pepper Squid, Crispy Fried Chicken, Meatball & Mozzarella Orzo Bake, Fish & Chips and a Juicy Pork Roast. Air frying doesn't get any easier than this!",
+      "price": 19.99,
+      "category": 3,
+      "available_in_hardback": "True",
+      "image": "9781529914511.jpg",
+      "external_url": "https://www.easons.com/bored-of-lunch-healthy-air-fryer-30-minute-meals-nathan-anthony-9781529914511"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781785303982,
+      "name": "The Hike Life",
+      "author": "Roz Purcell",
+      "description": "Fall in love with Ireland's dramatic mountains and rugged coastline in 50 unforgettable hikes. Roz Purcell has been hiking the length and breadth of Ireland for years with her enthusiastic community The Hike Life, exploring the best of what the island has to offer. This book brings to life the beauty and majesty of hiking in Ireland along with practical advice, easy-to-follow route descriptions and a wealth of tips. In it you'll find: - the ultimate fifty hikes to do on the island of Ireland, from rugged mountains to forest trails and cliff walks; - the complete guide to everything you need for a safe and enjoyable hike; - dozens of recommendations for pitstops and photo opportunities along the way to turn your hike into a full-day adventure; - and breathtaking photography to inspire you to get out there and start hiking.",
+      "price": 18.99,
+      "category": 3,
+      "available_in_hardback": "True",
+      "image": "9781785303982.jpg",
+      "external_url": "https://www.easons.com/the-hike-life-my-5--favourite-hikes-in-ireland-roz-purcell-9781785303982"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781399719230,
+      "name": "You're Not The Problem",
+      "author": "Helen Villiers",
+      "description": "Top 10 Irish Bestseller 'Helen & Katie's advice will change your life. It did mine.' - Kay Allinson, co-founder of Pinch of Nom This book will show you what a narcissist looks like and how their emotional abuse impacts the lives and relationships of their families. Many emotionally abusive behaviours from parent to child have become socially acceptable; because they're so prolific, they're normalised. Furthermore, humans often repeat relational patterns, passing the baton of trauma from generation to generation, until someone decides to change things. You're Not the Problem shows you how to recognise these behaviours and realise the profound impact they have had, and still have, and to see the patterns they form in our relationships with parents, partners, friends and colleagues. Using stories and examples from their clinical experience and extensive research, psychotherapists Helen Villiers and Katie McKenna share: · What Narcissistic Personality Disorder is · How to recognise emotional abuse in family relationships · The immediate and long-term impact · Practical strategies for healing · How to avoid repeating these behaviours With a compassionate, sympathetic approach to looking at your familial patterns, Villiers and McKenna show you how to truly break free from these toxic relationships and reclaim your life.",
+      "price": 19.99,
+      "category": 3,
+      "available_in_hardback": "True",
+      "image": "9781399719230.jpg",
+      "external_url": "https://www.easons.com/youre-not-the-problem-helen-villiers-9781399719230"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781473657601,
+      "name": "Owning It",
+      "author": "Caroline Foran",
+      "description": "'Offers a frank and funny approach to the ins and outs of anxiety - what it is, why it happens, and how to manage it. I love Caroline Foran's message of self-acceptance and leaning into mental illness rather than trying to outrun it. Highly recommended!' Sarah Knight, bestselling author of Calm the F**k Down THE NUMBER ONE BESTSELLER - A bullsh*t free perspective and a no-frills account of anxiety from the front line. Through the filtered lens of social media, it may seem like life's a peach, but for lots of people - journalist and author Caroline Foran included - anxiety is always bubbling beneath the surface. Here, she chronicles her experiences. From being unable to cope with the thought of venturing outside, to walking away from her fast-paced job, to the different, and sometimes controversial, treatments available - from Cognitive Behavioural Therapy to acupuncture to medication - Caroline shows us how she eventually found a way of owning her anxiety so that it doesn't own her. With extensive research and help from the experts, Owning It is written with honesty and a bullsh*t-free perspective; consider it your ultimate, practical guide that aims to get you feeling good again.",
+      "price": 13.91,
+      "category": 3,
+      "available_in_hardback": "True",
+      "image": "9781473657601.jpg",
+      "external_url": "https://www.easons.com/owning-it-caroline-foran-9781473657601"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780141186672,
+      "name": "The Man in the High Castle",
+      "author": "Philip K. Dick",
+      "description": "A dazzling speculative novel of 'counterfactual history' from one of America's most highly-regarded science fiction authors, Philip K. Dick's The Man in the High Castle includes an introduction by Eric Brown in Penguin Modern Classics. Philip K. Dick's acclaimed cult novel gives us a horrifying glimpse of an alternative world - one where the Allies have lost the Second World War. In this nightmare dystopia the Nazis have taken over New York, the Japanese control California and the African continent is virtually wiped out. In a neutral buffer zone in America that divides the world's new rival superpowers, lives the author of an underground bestseller. His book offers a new vision of reality - an alternative theory of world history in which the Axis powers were defeated - giving hope to the disenchanted. Does 'reality' lie with him, or is his world just one among many others? Philip Kindred Dick (1928-82) was born in Chicago in 1928. His career as a science fiction writer comprised an early burst of short stories followed by a stream of novels, typically character studies incorporating androids, drugs, and hallucinations. His best works are generally agreed to be The Man in the High Castle and Do Androids Dream of Electric Sheep? , the inspiration for the movie Blade Runner. If you enjoyed The Man in the High Castle , you might like Yevgeny Zamyatin's We , also available in Penguin Classics. 'The most brilliant science fiction mind on any planet' Rolling Stone 'Dick's finest book, and one of the very best science fiction novels ever published' Eric Brown",
+      "price": 11.59,
+      "category": 4,
+      "image": "9780141186672.jpg",
+      "external_url": "https://www.easons.com/the-man-in-the-high-castle-philip-k-dick-9780141186672"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781473223288,
+      "name": "Electric Dreams Volume One",
+      "author": "Philip K. Dick",
+      "description": "Based on the stories contained in this volume, the ten-part anthology series, Philip K. Dick's Electric Dreams is written and executive produced by Emmy-nominated Ronald D. Moore (Battlestar Galactica, Outlander) and Michael Dinner (Justified, Masters of Sex), with Oscar nominated Bryan Cranston (Trumbo, Breaking Bad) both executive producing and appearing in the series. Each episode will be a sharp, thrilling standalone drama adapted and contemporised for global audiences by a creative team of British and American writers. The series will both illustrate Philip K. Dick's prophetic vision and celebrate the enduring appeal of the prized Sci-Fi novelist's work. Other guest stars include Janelle Morae, Anna paquin, Timothy Spall and Benedict Wong. The ten stories included are: THE HANGING STANGER, THE COMMUTER, THE FATHER-THING, EXHIBIT PIECE, IMPOSSIBLE PLANET, SALES PITCH, FOSTER YOU'RE DEAD, THE HOOD MAKER, HOLY QUARREL, IF THERE WERE NO BENNY CEMOLI, AUTOFAC and HUMAN IS",
+      "price": 12.60,
+      "category": 4,
+      "image": "9781473223288.jpg",
+      "external_url": "https://www.easons.com/philip-k-dicks-electric-dreams-volume-one-philip-k-dick-9781473223288"
+    }
+  },
+  {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781529095258,
+      "name": "The Altas Six",
+      "author": "Olivie Blake",
+      "description": "The Atlas Six by Olivie Blake is the runaway TikTok sensation - a must-read fantasy novel with gorgeous illustrations. If you loved Ninth House and A Deadly Education , you'll love this. Secrets. Betrayal. Seduction. Welcome to the Alexandrian Society. When the world's best magicians are offered an extraordinary opportunity, saying yes is easy. Each could join the secretive Alexandrian Society, whose custodians guard lost knowledge from ancient civilizations. Their members enjoy a lifetime of power and prestige. Yet each decade, only six practitioners are invited - to fill five places. Contenders Libby Rhodes and Nico de Varona are inseparable enemies, cosmologists who can control matter with their minds. Parisa Kamali is a telepath, who sees the mind's deepest secrets. Reina Mori is a naturalist who can perceive and understand the flow of life itself. And Callum Nova is an empath, who can manipulate the desires of others. Finally there's Tristan Caine, whose powers mystify even himself. Following recruitment by the mysterious Atlas Blakely, they travel to the Society's London headquarters. Here, each must study and innovate within esoteric subject areas. And if they can prove themselves, over the course of a year, they'll survive. Most of them. 'As much a delicious contest of wit, will, and passion as it is of magic, this book is half mystery, half puzzle, and wholly a delight' - Holly Black, author of The Cruel Prince The story continues in The Atlas Paradox, the heart-stopping sequel. Reader reviews: 'I don't think anything will ever compare with this' 'To say I can't wait for the sequel is an understatement. Do yourself a favour and buy this immediately!' 'I had to convince myself magic isn't real' Originally a self-published sensation, this edition has been fully edited and revised.",
+      "price": 11.59,
+      "category": 4,
+      "image": "9781529095258.jpg",
+      "external_url": "https://www.easons.com/the-atlas-six-olivie-blake-9781529095258"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780552159845,
+      "name": "Good Omens",
+      "author": "Terry Pratchett",
+      "description": "'Armageddon only happens once, you know. They don't let you go around again until you get it right' People have been predicting the end of the world almost from its very beginning, so it's only natural to be sceptical when a new date is set for Judgement Day. But what if, for once, the predictions are right, and the apocalypse really is due to arrive next Saturday, just after tea? You could spend the time left drowning your sorrows, giving away all your possessions in preparation for the rapture, or laughing it off as (hopefully) just another hoax. Or you could just try to do something about it.",
+      "price": 11.59,
+      "category": 4,
+      "image": "9780552159845.jpg",
+      "external_url": "https://www.easons.com/good-omens-terry-pratchett-9780552159845"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781399705455,
+      "name": "Fairy Tale",
+      "author": "Stephen King",
+      "description": "WELCOME TO THE DARK SIDE OF HAPPILY EVER AFTER Charlie Reade looks like a regular high school kid, great at baseball and football, a decent student. But when Charlie is seventeen, he meets a dog named Radar and her aging master, Howard Bowditch, a recluse in a big house at the top of a big hill, with a locked shed in the backyard. When Bowditch dies, he leaves Charlie a cassette tape telling a story no one would believe - inside the shed is a portal to another world. Legendary storyteller Stephen King goes into the deepest well of his imagination in this spellbinding novel about a seventeen-year-old boy who inherits the keys to a parallel world where good and evil are at war, and the stakes could not be higher - for their world or ours.",
+      "price": 9.49,
+      "category": 4,
+      "image": "9781399705455.jpg",
+      "external_url": "https://www.easons.com/fairy-tale-stephen-king-9781399705455"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781529095326,
+      "name": "The Atlas Paradox",
+      "author": "Olivie Blake",
+      "description": "Discover The Atlas Paradox , the electric dark academia sequel to viral sensation The Atlas Six by Olivie Blake - a No.1 Sunday Times bestseller. Inside the Alexandrian Society alliances will be tested, hearts will be broken and all must pick a side. Six magicians were offered the opportunity of a lifetime. Five are now members of the Society. And two paths lie before them. In this thrilling next instalment, the secret society of Alexandrians is unmasked. Its newest recruits realize the institute is capable of raw, world-changing power. It's also headed by a man with plans to change life as we know it - and these are already under way. But the cost of this knowledge is as high as the price of power, and each initiate must choose which faction to follow. Yet as events gather momentum and dangers multiply, which of their alliances will hold? Can friendships hold true and are enemies quite what they seem? Reader reviews for The Atlas Paradox : 'Olivie Blake has done it again' 'More of everything I loved from the first book' 'I was completely shocked. NOW I NEED BOOK 3'",
+      "price": 10.99,
+      "category": 4,
+      "image": "9781529095326.jpg",
+      "external_url": "https://www.easons.com/the-atlas-paradox-olivie-blake-9781529095326"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781529356540,
+      "name": "The Stand",
+      "author": "Stephen King",
+      "description": "The tie-in edition of the nine-part CBS All Access series starring Whoopi Goldberg, Alexander Skarsgard, and James Marsden, premiering in the USA December 17, 2020. FIRST CAME THE VIRUS. AND THEN THE DREAMS... A man escapes from a biological testing facility, unknowingly carrying a deadly weapon: a mutated strain of super-flu that will wipe out over 99 percent of the world's population within a few weeks. Those who remain are scared, bewildered, and in need of a leader. Two emerge - Mother Abagail, the benevolent 108-year-old woman who urges them to build a peaceful community in Boulder, Colorado; and Randall Flagg, the 'dark man', the apostate of death, the warlord of the charnel house and Prince of Evil. Now the survivors must choose between them - and ultimately decide the fate of all humanity. Stephen King's apocalyptic vision of a world blasted by plague and tangled in an elemental struggle between good and evil is a classic for our times. 'A masterpiece' - Guardian 'His work plumbs with unnerving accuracy, the hopes and fears of an entire nation' - Observer",
+      "price": 12.32,
+      "category": 4,
+      "image": "9781529356540.jpg",
+      "external_url": "https://www.easons.com/the-stand-stephen-king-9781529356540"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9780330545754,
+      "name": "Malice",
+      "author": "John Gwynne",
+      "description": "'Hell of a debut: Highly recommended' - Conn Iggulden, author of Empire An epic coming-of-age fantasy inspired by mythology and the Iron Age, Malice by John Gwynne is the first in The Faithful and the Fallen series. Young Corban watches enviously as boys become warriors, learning the art of war. He yearns to wield his sword and spear to protect his king's realm. But that day will come all too soon. The Banished Lands has a violent past where armies of men and giants clashed in battle, the earth running dark with their heartsblood. Although the giant-clans were broken in ages past, their ruined fortresses still scar the land. But now giants stir anew, the very stones weep blood and there are sightings of giant wyrms. Those who can still read the signs see a threat far greater than the ancient wars. Sorrow will darken the world, as angels and demons make it their battlefield. Then there will be a war to end all wars. Continue the epic fantasy series with Valour. Praise for John Gwynne: 'Reminds me of why I became a fantasy enthusiast in the first place' - Robin Hobb, author of Assassin's Apprentice 'One of the modern masters of heroic fantasy' - Adrian Tchaikovsky, author of Children of Memory 'Exciting, well-written swords and sorcery. Try it on for size' - Mark Lawrence, author of The Broken Empire",
+      "price": 12.76,
+      "category": 4,
+      "image": "9780330545754.jpg",
+      "external_url": "https://www.easons.com/malice-john-gwynne-9780330545754"
+    }
+  },
+  {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781035002153,
+      "name": "Wolfsong",
+      "author": "TJ Klune",
+      "description": "From the Sunday Times bestselling author of The House in the Cerulean Sea , Under the Whispering Door and In the Lives of Puppets , Wolfsong is a story of love, loyalty, and family. Ox Matheson was twelve when his father taught him a lesson: Ox wasn't worth anything and people would never understand him. Then he left. Ox was sixteen when the energetic Bennett family moved in next door, harbouring a secret that would change him forever. For the family are shape-shifters, who can transform into wolves at will. Drawn to their magic, loyalty and enduring friendships, Ox feels a gulf between this extraordinary new world and the quiet life he's known. He also finds an ally in Joe, the youngest Bennett boy. Joe is charming and handsome, but haunted by scars he cannot heal. Ox was twenty-three when murder came to town, and tore a hole in his heart. Violence flared, tragedy split the pack and Joe left town, leaving Ox behind. Three years later, the boy is back. Except now he's a man - and Ox can no longer ignore the song that howls between them. Wolfsong is the first book in beloved the Green Creek series by bestselling author TJ Klune. Continue the journey with Ravensong . Praise for TJ Klune: 'Like being wrapped up in a big gay blanket' - V. E. Schwab, author of The Invisible Life of Addie LaRue 'A whimsical, warm-hearted fantasy' - The Guardian 'A radiant treat' - Locus Magazine",
+      "price": 11.99,
+      "category": 4,
+      "image": "9781035002153.jpg",
+      "external_url": "https://www.easons.com/wolfsong-tj-klune-9781035002153"
+    }
+  },
+  {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9781035011537,
+      "name": "Masters of Death",
+      "author": "Olivie Blake",
+      "description": "A tale of vampires, ghosts and death himself. From the bestselling author of The Atlas Six , Masters of Death by Olivie Blake is a spellbinding, page-turning and queer fantasy. 'Olivie Blake is a mind-blowing talent' - Chloe Gong, author of These Violent Delights This book is about an estate agent. Only she's a vampire, the house on sale is haunted, and its ghost was murdered. When Viola Marek hires Fox D'Mora to deal with a ghost-infested mansion, she expects a competent medium. But unbeknownst to Viola, Fox is not a medium at all. He's a fraud - and the godson of Death. As the mystery of the mansion unfolds, Viola and Fox are drawn into an unlikely quest that neither wants nor expects. They'll need the help of a demonic personal trainer, a steadfast reaper, and an angel with her own secrets. It transpires that an inconvenient dead body and a lost love are intrinsically linked. Can this coalition of unwilling allies solve this conundrum and un-haunt a house - by winning a devious immortal game? This edition features beautiful interior illustrations from Little Chmura. 'If you enjoyed Neil Gaiman and Terry Pratchett's Good Omens , you will adore this book' - Starburst Magazine",
+      "price": 15.99,
+      "category": 4,
+      "image": "9781035011537.jpg",
+      "external_url": "https://www.easons.com/masters-of-death-olivie-blake-9781035011537"
+    }
+  },
+  {
+    "pk": 41,
+    "model": "products.product",
+    "fields": {
+      "isbn": 5290481,
+      "name": "Busy B Mid-Year A6 To Do Diary Floral",
+      "author": "",
+      "description": "With timetables, planners, reminders and more, this genius little diary will help you stay on top of your busy academic year.",
+      "price": 14.99,
+      "category": 5,
+      "num_pages": 100,
+      "image": "5290481.jpg",
+      "external_url": "https://www.easons.com/busy-b-mid-year-a6-to-do-diary-floral-5290481"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "products.product",
+    "fields": {
+      "isbn": 2862028,
+      "name": "Pukka 2024 Black Softcover Diary",
+      "author": "",
+      "description": "Keeping on top of your schedule can be a challenge, but it’s easier with the right tools. Plan out every detail with Pukka 2024 Carpe Diem diaries. The premium PU cover is filled with a structured layout enabling you to see each week's appointments and tasks at a glance over a two-page spread. The sophisticated dated diaries include a ribbon bookmark and elastic fastener so you’ll never lose track of your page again. With high-quality, ivory, 80 GSM acid-free paper and an expandable inner pocket, we’re sure our 2024 diary will be your new go-to. Keep track of your goals, to-do’s and schedule, all in one convenient place. With a variety of sections for you to fill out daily including a space for your goals, important dates, to-do lists and wish lists.",
+      "price": 2.50,
+      "category": 5,
+      "num_pages": 100,
+      "image": "2862028.jpg",
+      "external_url": "https://www.easons.com/pukka-carpe-diem-2024-black-softcover-diary-2862028"
+    }
+  },
+  {
+    "pk": 43,
+    "model": "products.product",
+    "fields": {
+      "isbn": 2862030,
+      "name": "Pukka 2024 Blue Softcover Diary",
+      "author": "",
+      "description": "Keeping on top of your schedule can be a challenge, but it’s easier with the right tools. Plan out every detail with Pukka 2024 Carpe Diem diaries. The premium PU cover is filled with a structured layout enabling you to see each week's appointments and tasks at a glance over a two-page spread. The sophisticated dated diaries include a ribbon bookmark and elastic fastener so you’ll never lose track of your page again. With high-quality, ivory, 80 GSM acid-free paper and an expandable inner pocket, we’re sure our 2024 diary will be your new go-to. Keep track of your goals, to-do’s and schedule, all in one convenient place. With a variety of sections for you to fill out daily including a space for your goals, important dates, to-do lists and wish lists.",
+      "price": 2.50,
+      "category": 5,
+      "num_pages": 100,
+      "image": "2862030.jpg",
+      "external_url": "https://www.easons.com/pukka-carpe-diem-2024-blue-softcover-diary-2862030"
+    }
+  },
+  {
+    "pk": 44,
+    "model": "products.product",
+    "fields": {
+      "isbn": 2862029,
+      "name": "Pukka 2024 Pink Softcover Diary",
+      "author": "",
+      "description": "Keeping on top of your schedule can be a challenge, but it’s easier with the right tools. Plan out every detail with Pukka 2024 Carpe Diem diaries. The premium PU cover is filled with a structured layout enabling you to see each week's appointments and tasks at a glance over a two-page spread. The sophisticated dated diaries include a ribbon bookmark and elastic fastener so you’ll never lose track of your page again. With high-quality, ivory, 80 GSM acid-free paper and an expandable inner pocket, we’re sure our 2024 diary will be your new go-to. Keep track of your goals, to-do’s and schedule, all in one convenient place. With a variety of sections for you to fill out daily including a space for your goals, important dates, to-do lists and wish lists.",
+      "price": 2.50,
+      "category": 5,
+      "num_pages": 100,
+      "image": "2862029.jpg",
+      "external_url": "https://www.easons.com/pukka-carpe-diem-2024-pink-softcover-diary-2862029"
+    }
+  },
+  {
+    "pk": 45,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9870077,
+      "name": "Paperchase Student Planner",
+      "author": "",
+      "description": "Designed for your busy student life, our Student Planner has everything you need to keep on track all year round, including a detachable to-do list pad, weekly planner, revision timetable, project pages, weekly budget tracker, and lined pages for your notes. Contains 6 useful dividers which include a term timetable, weekly planner, exam and test prep, project and assignment pages, lists and budget tracker and a lined notes section / Also features a lined detachable to-do list pad on the insider cover / All dividers and pages can be detached using the secure metal rings / Measures H23.7 x W17.7 x D3.5cm / Contains 260 pages, 100 gsm / Hardcover design FSC approved",
+      "price": 13.00,
+      "category": 5,
+      "num_pages": 100,
+      "image": "9870077.jpg",
+      "external_url": "https://www.easons.com/paperchase-student-planner-9870077"
+    }
+  },
+  {
+    "pk": 46,
+    "model": "products.product",
+    "fields": {
+      "isbn": 6764157,
+      "name": "Paperblanks Hummingbirds & Flutterbyes 24 PAD Midi",
+      "author": "",
+      "description": "Laurel Burch was a self-taught artist and “ﬂower child” who created vibrant and moving themes with paint and paper. This Hummingbirds & Flutterbyes cover design, featuring dancing butterflies and flitting hummingbirds, comes from one of Laurel’s favourite themes to paint – Flutterbyes.",
+      "price": 6.25,
+      "category": 5,
+      "num_pages": 100,
+      "image": "6764157.jpg",
+      "external_url": "https://www.easons.com/paperblanks-hummingbirds-flutterbyes-24-pad-midi-6764157"
+    }
+  },
+  {
+    "pk": 47,
+    "model": "products.product",
+    "fields": {
+      "isbn": 6763066,
+      "name": "Paperblanks Madame Butterfly 2024 Flexi HOR Mini",
+      "author": "",
+      "description": "French author and illustrator Benjamin Lacombe lends his unique spirit to our collection with this lively design. His works have been published and translated around the world. In this Madame Butterfly cover, from his 2013 book of the same name, Lacombe’s ability to capture humanity and honest emotion is on full display.",
+      "price": 4.50,
+      "category": 5,
+      "num_pages": 100,
+      "image": "6763066.jpg",
+      "external_url": "https://www.easons.com/paperblanks-madame-butterfly-2024-flexi-hor-mini-6763066"
+    }
+  },
+  {
+    "pk": 48,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9870083,
+      "name": "Paperchase Rainbow A4 Wiro Teacher Planner",
+      "author": "",
+      "description": "Tackle the school year head on with a one stop shop teacher planner with a vibrant rainbow cover. Including an undated calendar, planners, assessments, to do lists and so much more. This is your logistical lifesaver and you have got this!",
+      "price": 13.00,
+      "category": 5,
+      "num_pages": 100,
+      "image": "9870083.jpg",
+      "external_url": "https://www.easons.com/paperchase-rainbow-a4-wiro-teacher-planner-9870083"
+    }
+  },
+  {
+    "pk": 49,
+    "model": "products.product",
+    "fields": {
+      "isbn": 2603203,
+      "name": "Letts Spring Valley Week To View Green A6 Diary",
+      "author": "",
+      "description": "This floral patterned diary has a matt laminated cover with rounded corners. It is wiro bound on the spine and features pop-out accessories to use in the diary and has a handy card double sidded storage pocket. Multilanguage diary.",
+      "price": 3.50,
+      "category": 5,
+      "num_pages": 100,
+      "image": "2603203.jpg",
+      "external_url": "https://www.easons.com/letts-spring-valley-a6-wtv-ml-green-2603203"
+    }
+  },
+  {
+    "pk": 50,
+    "model": "products.product",
+    "fields": {
+      "isbn": 2862013,
+      "name": "Pukka Bloom A5 Daily Planner Pad Black",
+      "author": "",
+      "description": "A5 Bloom Daily Planner Pads, 115 sheets, 80gsm, 'To Do' pages, page perforation, preprinted to do, dates, schedule and notes tables, Black",
+      "price": 9.99,
+      "category": 5,
+      "num_pages": 100,
+      "image": "2862013.jpg",
+      "external_url": "https://www.easons.com/pukka-bloom-a5-daily-planner-pad-black-2862013"
+    }
+  },
+  {
+    "pk": 51,
+    "model": "products.product",
+    "fields": {
+      "isbn": 6401277,
+      "name": "Orla Kiely A5 Notebook Botanica",
+      "author": "",
+      "description": "This beautiful hardcover notebook features the striking Orla Kiely Botanica pattern. With rounded corners, an elastic closure, and a matching ribbon bookmark, this is the perfect piece of stationary for any Orla Kiely fan. The expandable inner pocket in the back and grid square page layout are practical features that make it ideal for a variety of uses.",
+      "price": 9.74,
+      "category": 6,
+      "num_pages": 80,
+      "image": "6401277.jpg",
+      "external_url": "https://www.easons.com/orla-kiely-a5-notebook-botanica-6401277"
+    }
+  },
+  {
+    "pk": 52,
+    "model": "products.product",
+    "fields": {
+      "isbn": 6401281,
+      "name": "Orla Kiely A5 Notebook Multi Stem",
+      "author": "",
+      "description": "This bold and cheerful notebook is certain to make you smile whenever you use it! Featuring Orla Kiely’s iconic Multi Stem print, this multi-coloured design celebrates the style she has become admired for around the globe. With added detailing such as rounded corners, elastic closure, and matching ribbon bookmark, this hardcover notebook has been made with every care. The expandable inner pocket in the back and grid square layout make it a practical notebook for a variety of uses. Available in A4 or A5.",
+      "price": 9.74,
+      "category": 6,
+      "num_pages": 80,
+      "image": "6401281.jpg",
+      "external_url": "https://www.easons.com/orla-kiely-a5-notebook-multi-stem-6401281"
+    }
+  },
+  {
+    "pk": 53,
+    "model": "products.product",
+    "fields": {
+      "isbn": 2079014,
+      "name": "RocketBook Core Executive A5 Dot Grid Black",
+      "author": "",
+      "description": "The Rocketbook Core Black notebook provides a classic pen and paper experience, yet is built for the digital age. Although it feels like a traditional notebook, the Core is endlessly reusable and connected to all of your favorite cloud services. The Core is designed for those who want an endlessly reusable notebook to last for years, if not a lifetime. The Core has specially engineered pages that provide an extremely smooth writing experience that can be erased with a damp cloth.",
+      "price": 34.19,
+      "category": 6,
+      "num_pages": 80,
+      "image": "2079014.jpg",
+      "external_url": "https://www.easons.com/rocketbook-core-lettera4-black-dot-grid-2079014"
+    }
+  },
+  {
+    "pk": 54,
+    "model": "products.product",
+    "fields": {
+      "isbn": 7240948,
+      "name": "Museum & Galleries A5 Luxury Notebook - Mathew Williamson Stardust",
+      "author": "",
+      "description": "Matthew Williamson A5 Stardust Luxury Notebook with a soft touch cover and gold paper edging. Lay-flat binding, 160pp lined paper and a branded bellyband. All paper is FSC certified. Matthew Williamson is world-renowned for his highly recognisable signature aesthetic. A master of print, embellishment and kaleidoscopic colour, his collections encapsulate a bohemian spirit and a laid-back sense of glamour. The Matthew Williamson gift stationery range from Museums & Galleries is a celebration of this unique fashion and lifestyle brand, featuring classic archive prints alongside latest brand patterns.",
+      "price": 10.49,
+      "category": 6,
+      "num_pages": 80,
+      "image": "7240948.jpg",
+      "external_url": "https://www.easons.com/museum-galleries-a5-luxury-notebooks-stardust-7240948"
+    }
+  },
+  {
+    "pk": 55,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9870075,
+      "name": "Paperchase Letter I Notebook",
+      "author": "",
+      "description": "Make your notebook personal to you with one of our stunning gold letter notepads. In a beautiful array of colours, these A-Z notebooks have been designed with luxury in mind. Each letter is embossed in gold and finished with a unique floral design. A lovely gift or pay-day treat.",
+      "price": 5.00,
+      "category": 6,
+      "num_pages": 80,
+      "image": "9870075.jpg",
+      "external_url": "https://www.easons.com/paperchase-letter-i-notebook-9870075"
+    }
+  },
+  {
+    "pk": 56,
+    "model": "products.product",
+    "fields": {
+      "isbn": 7240960,
+      "name": "Museum & Galleries Stitched Notebook - V&A Museum Kimono Cranes",
+      "author": "",
+      "description": "This handy sized V&A Museum Kimono Cranes stitched notebook is bound with coloured stitching and features printed wraparound cover. 96pp lined paper, all paper is FSC certified. The V&A is the world’s leading museum of art and design. Established in 1852, the V&A has educated and inspired the public, designers and manufacturers through its collections and exhibition programme. Today the collections, which span over 5,000 years of human creativity in virtually every medium and from many parts of the world, continue to intrigue, inspire and inform. The V&A gift stationery collection from Museums & Galleries is a continually evolving showcase of the Museum’s diverse and expanding archives, and offers the ultimate decorative art range.",
+      "price": 5.24,
+      "category": 6,
+      "num_pages": 80,
+      "image": "7240960.jpg",
+      "external_url": "https://www.easons.com/museum-galleries-stitched-notebooks-kimono-cranes-7240960"
+    }
+  },
+  {
+    "pk": 57,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9870071,
+      "name": "Paperchase Letter P Notebook",
+      "author": "",
+      "description": "Make your notebook personal to you with one of our stunning gold letter notepads. In a beautiful array of colours, these A-Z notebooks have been designed with luxury in mind. Each letter is embossed in gold and finished with a unique floral design. A lovely gift or pay-day treat.",
+      "price": 5.00,
+      "category": 6,
+      "num_pages": 80,
+      "image": "9870071.jpg",
+      "external_url": "https://www.easons.com/paperchase-letter-p-notebook-9870071"
+    }
+  },
+  {
+    "pk": 58,
+    "model": "products.product",
+    "fields": {
+      "isbn": 9870070,
+      "name": "Paperchase Letter F Notebook",
+      "author": "",
+      "description": "Make your notebook personal to you with one of our stunning gold letter notepads. In a beautiful array of colours, these A-Z notebooks have been designed with luxury in mind. Each letter is embossed in gold and finished with a unique floral design. A lovely gift or pay-day treat.",
+      "price": 5.00,
+      "category": 6,
+      "num_pages": 80,
+      "image": "9870070.jpg",
+      "external_url": "https://www.easons.com/paperchase-letter-f-notebook-9870070"
+    }
+  },
+  {
+    "pk": 59,
+    "model": "products.product",
+    "fields": {
+      "isbn": 6401274,
+      "name": "Orla Kiely A4 Notebook Linear Stem Olive",
+      "author": "",
+      "description": "The iconic Linear Stem print gives this hardcover notebook a timeless feel whilst the bold colours add a dash of vibrancy that celebrates Orla Kiely’s widely admired retro-inspired style. Beautiful and practical, the Linear Stem Notebook has rounded corners, an elastic closure and matching ribbon bookmark in both the Olive and Slate colourways. Available in A4 and A5 sizes, the notebook also features an expandable inner pocket in the back and grid square layout making it ideal for sketches, studying, or note-taking.",
+      "price": 13.49,
+      "category": 6,
+      "num_pages": 80,
+      "image": "6401274.jpg",
+      "external_url": "https://www.easons.com/orla-kiely-a4-notebook-linear-stem-olive-6401274"
+    }
+  },
+  {
+    "pk": 60,
+    "model": "products.product",
+    "fields": {
+      "isbn": 6401268,
+      "name": "Orla Kiely Small Notebook Atomic Flower",
+      "author": "",
+      "description": "Bring a splash of colour to the office with the Orla Kiely medium notebook in the striking Atomic Flower print. The hard cover notebook with rounded corners, elastic closure and matching ribbon bookmark is finished perfectly with the bold Dandelion pattern in the iconic Orla Kiely style. With an expandable inner pocket in the back and grid square layout, the Atomic Flower Dandelion Notebook is perfect for a variety of uses in the office, at home or college.",
+      "price": 13.49,
+      "category": 6,
+      "num_pages": 80,
+      "image": "6401268.jpg",
+      "external_url": "https://www.easons.com/orla-kiely-a4-notebook-atomic-flower-6401268"
+    }
+  }
+]
