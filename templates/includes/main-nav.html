@@ -18,10 +18,10 @@
                 Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="books-link">
-                <a href="" class="dropdown-item">Classics</a>
-                <a href="" class="dropdown-item">Fiction</a>
-                <a href="" class="dropdown-item">Non Fiction</a>
-                <a href="" class="dropdown-item">Fantasy</a>
+                <a href="{% url 'products' %}?category=classics" class="dropdown-item">Classics</a>
+                <a href="{% url 'products' %}?category=fiction" class="dropdown-item">Fiction</a>
+                <a href="{% url 'products' %}?category=non_fiction" class="dropdown-item">Non Fiction</a>
+                <a href="{% url 'products' %}?category=fantasy" class="dropdown-item">Fantasy</a>
             </div>
         </li>
 
@@ -31,8 +31,9 @@
                 Stationery
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="stationery-link">
-                <a href="" class="dropdown-item">Journals &amp; Planners</a>
-                <a href="" class="dropdown-item">Notebooks</a>
+                <a href="{% url 'products' %}?category=journals_and_planners" class="dropdown-item">Journals &amp; Planners</a>
+                <a href="{% url 'products' %}?category=notebooks" class="dropdown-item">Notebooks</a>
+                <a href="{% url 'products' %}?category=journals_and_planners,notebooks" class="dropdown-item">All Stationery</a>
             </div>
         </li>
     </ul>
