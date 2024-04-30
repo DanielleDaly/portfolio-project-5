@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse, HttpResponse
 
 # Create your views here.
 
@@ -32,3 +32,49 @@ def add_to_bag(request, item_id):
 
     request.session['bag'] = bag
     return redirect(redirect_url)
+
+def adjust_bag(request, item_id):
+    """ Adjust the quantity of the specified product to the specified amount """
+
+    quantity = int(request.POST.get('quantity'))
+    cover = None
+    if 'product_cover' in request.POST:
+        cover = request.POST['product_cover']
+    bag = request.session.get('bag', {})
+
+    if cover:
+        if quantity > 0:
+            bag[item_id]['items_by_cover_type'][cover] = quantity
+        else:
+            del bag[item_id]['items_by_cover_type'][cover]
+            if not bag[item_id]['items_by_cover_type']:
+                bag.pop(item_id)
+    else:
+        if quantity > 0:
+            bag[item_id] = quantity
+        else:
+            bag.pop(item_id)
+
+    request.session['bag'] = bag
+    return redirect(reverse('view_bag'))
+
+def remove_from_bag(request, item_id):
+    """ Remove the specified product from the shopping bag """
+
+    try:
+        cover = None
+        if 'product_cover' in request.POST:
+            cover = request.POST['product_cover']
+        bag = request.session.get('bag', {})
+
+        if cover:
+            del bag[item_id]['items_by_cover_type'][cover]
+            if not bag[item_id]['items_by_cover_type']:
+                bag.pop(item_id)
+        else:
+            bag.pop(item_id)
+
+        request.session['bag'] = bag
+        return HttpResponse(status=200)
+    except Exception as e:
+        return HttpResponse(status=500)
