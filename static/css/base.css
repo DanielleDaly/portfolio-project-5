@@ -210,6 +210,15 @@ input[name='q']::placeholder {
     object-fit: contain;
 }
 
+.product-image-link {
+    overflow: hidden;
+}
+
+.product-image-link:hover img {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
