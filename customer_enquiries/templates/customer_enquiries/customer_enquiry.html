@@ -19,34 +19,33 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4">Customer Enquiry</h2>
+            <h2 class="logo-font mb-4">Contact Us</h2>
             <hr>
         </div>
     </div>
 
     <div class="row">
         <div class="col col-12 col-lg-6 mb-5">
-            <div class="row">
-                <div class="col-12">
-                    <p class="text-muted">Please fill out the form below and we will contact you within 24 hours.</p>
-                    <form action="{% url 'customer_enquiry' %}" method="POST" id="payment-form">
-                        {% csrf_token %}
-                        {% for field in form %}
-                            {{ field | as_crispy_field }}
-                        {% endfor %}
+            <p class="text-muted">Please fill out the form below and we will respond to you within 24 hours.</p>
+            <form action="{% url 'customer_enquiry' %}" method="POST" id="payment-form">
+                {% csrf_token %}
+                {% for field in form %}
+                    {{ field | as_crispy_field }}
+                {% endfor %}
 
-                        <div class="submit-button text-right mt-5 mb-2">
-                            <a href="{% url 'customer_enquiry' %}" class="btn btn-outline-black rounded-0">Cancel</a>
-                            <button id="submit-button" class="btn btn-black rounded-0">
-                                <span class="font-weight-bold">Send Enquiry</span>
-                                <span class="icon">
-                                    <i class="fas fa-chevron-right"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </form>
+                <div class="submit-button text-right mt-5 mb-2">
+                    <a href="{% url 'customer_enquiry' %}" class="btn btn-outline-black rounded-0">Cancel</a>
+                    <button id="submit-button" class="btn btn-black rounded-0">
+                        <span class="font-weight-bold">Send Enquiry</span>
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </button>
                 </div>
-            </div>
+            </form>
+
+            <p class="text-muted">If you would prefer to email us, you can do so by sending your enquiry to <a class="email-link"
+                    href="mailto:info@booksbazaar.com">info@booksbazaar.com</a>.</p>
         </div>
     </div>
 </div>

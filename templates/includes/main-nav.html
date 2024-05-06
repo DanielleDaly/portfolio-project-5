@@ -1,5 +1,12 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item">
+            <a class="d-md-none logo-font font-weight-bold nav-link text-black" href="{% url 'home' %}"
+                id="home-link">
+                Home
+            </a>
+        </li>
+
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -28,7 +35,7 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="stationery-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="stationery-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Stationery
             </a>
@@ -37,6 +44,12 @@
                 <a href="{% url 'products' %}?category=notebooks" class="dropdown-item">Notebooks</a>
                 <a href="{% url 'products' %}?category=journals_and_planners,notebooks" class="dropdown-item">All Stationery</a>
             </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'customer_enquiry' %}" id="contact-us-link">
+                Contact Us
+            </a>
         </li>
     </ul>
 </div>
