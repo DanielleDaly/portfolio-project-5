@@ -1,0 +1,19 @@
+.review {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+    .reviews {
+        gap: 0 1rem;
+    }
+
+    .review {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    .review-half-size {
+        flex-grow: 0 !important;
+        flex-grow: 0 !important;
+        flex-basis: calc(50% - 0.5rem) !important;
+    }
+}
