@@ -1,5 +1,11 @@
 .reviews-list-item {
     margin-bottom: 1rem;
+    background-color: #f3f2f4;
+    transition: all 0.2s ease-in-out;
+}
+
+.reviews-list-item:hover {
+    box-shadow: 0 6px 10px rgba(0,0,0,.16);
 }
 
 .reviews-list-item:hover {
@@ -27,12 +33,6 @@
 
     .reviews-list-item {
         flex: 1 1 calc(50% - 1rem);
-        background-color: #f3f2f4;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .reviews-list-item:hover {
-        box-shadow: 0 6px 10px rgba(0,0,0,.16);
     }
 
     .reviews-list-item-half-size {
