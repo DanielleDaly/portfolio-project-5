@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/bookstore-unsplash.jpg') no-repeat center center fixed;
+    background: #fff;
     background-size: cover;
     height: calc(100vh - 173px);
     color: #555;
@@ -25,6 +25,13 @@ body {
 
 .main-logo-link {
     width: fit-content;
+}
+
+.delivery-banner-text {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .shadowed-title-text {
@@ -52,6 +59,25 @@ body {
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: #000;
+    color: #fff !important;
+}
+
+.btn-pink,
+.btn-pink:hover {
+    background: #e0038b;
+    color: white;
+}
+
+.btn-outline-pink {
+    background: #fff;
+    color: #e0038b !important;
+    border: 1px solid #e0038b;
+}
+
+.btn-outline-pink:hover,
+.btn-outline-pink:active,
+.btn-outline-pink:focus {
+    background: #e0038b;
     color: #fff !important;
 }
 
@@ -351,5 +377,9 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 125px);
+    }
+
+    .navbar .list-inline-item:not(:last-child) {
+        margin-right: 0;
     }
 }

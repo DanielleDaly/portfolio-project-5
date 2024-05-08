@@ -17,19 +17,23 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row homepage-header">
-        <div class="col">
-            <h1 class="logo-font mb-4">Read more, pay less.</h1>
-            <h2 class="mb-3">Browse our collections of some of the finest books and stationery.</h2>
-            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+    <section class="row homepage-header p-5">
+        <div class="col homepage-header-contents">
+            <div class="homepage-header-text-container text-center text-lg-left">
+                <h1 class="logo-font mb-4">Read more, pay less.</h1>
+                <h2 class="mb-3">Browse our collections of some of the finest books and stationery.</h2>
+            </div>
+            <div class="homepage-header-button-container align-self-end">
+                <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+            </div>
         </div>
-    </div>
+    </section>
 
     {% for book_category in book_categories %}
-    <div class="row">
+    <section class="homepage-products-section row py-5 px-4">
         <div class="homepage-products-container col-10 offset-1">
             <h2 class="logo-font text-center mb-4">{{ book_category.category.display_name }}</h2>
-            <p>{{ book_category.category.description }}</p>
+            <p class="text-center">{{ book_category.category.description }}</p>
             <div class="homepage-products-list d-flex flex-row flex-wrap justify-between">
                 {% for product in book_category.products %}
                 <a href="{% url 'product_detail' product.id %}" class="homepage-products-list-item p-3 
@@ -49,7 +53,12 @@
                             <h3 class="homepage-products-list-item-title">{{ product.name }}</h3>
 
                             {% if product.author %}
-                            <small class="homepage-products-list-item-author">By: {{ product.author }}</small><br>
+                            <p class="homepage-products-list-item-author">By: {{ product.author }}</p>
+                            {% endif %}
+
+                            {% if product.description %}
+                            <p class="homepage-products-list-item-author">{{ product.description|truncatechars:140 }}
+                            </p>
                             {% endif %}
 
                             <small class="d-lg-none homepage-products-list-item-buy-now">Buy Now &raquo;</small>
@@ -58,22 +67,24 @@
                 </a>
                 {% endfor %}
             </div>
-            <a href="{% url 'products' %}?category={{ book_category.category.name }}"
-                class="btn btn-black rounded-0">
-                <span>Browse {{ book_category.category.display_name }}</span>
-                <span class="icon">
-                    <i class="fas fa-chevron-right"></i>
-                </span>
-            </a>
+            <div class="homepage-products-category-button-container text-center mt-4">
+                <a href="{% url 'products' %}?category={{ book_category.category.name }}"
+                    class="btn btn-pink rounded-0">
+                    <span>Browse {{ book_category.category.display_name }}</span>
+                    <span class="icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
         </div>
-    </div>
+    </section>
     {% endfor %}
 
     {% for stationery_category in stationery_categories %}
-    <div class="row">
+    <section class="homepage-products-section row py-5 px-4">
         <div class="homepage-products-container col-10 offset-1">
             <h2 class="logo-font text-center mb-4">{{ stationery_category.category.display_name }}</h2>
-            <p>{{ stationery_category.category.description }}</p>
+            <p class="text-center">{{ stationery_category.category.description }}</p>
             <div class="homepage-products-list d-flex flex-row flex-wrap justify-between">
                 {% for product in stationery_category.products %}
                 <a href="{% url 'product_detail' product.id %}" class="homepage-products-list-item p-3 
@@ -93,28 +104,36 @@
                             <h3 class="homepage-products-list-item-title">{{ product.name }}</h3>
 
                             {% if product.author %}
-                            <small class="homepage-products-list-item-author">By: {{ product.author }}</small><br>
+                            <p class="homepage-products-list-item-author">By: {{ product.author }}</p>
+                            {% endif %}
+
+                            {% if product.description %}
+                            <p class="homepage-products-list-item-author">{{ product.description|truncatechars:140 }}
+                            </p>
                             {% endif %}
                         </div>
                     </div>
                 </a>
                 {% endfor %}
             </div>
-            <a href="{% url 'products' %}?category={{ stationery_category.category.name }}"
-                class="btn btn-black rounded-0">
-                <span>Buy {{ stationery_category.category.display_name }}</span>
-                <span class="icon">
-                    <i class="fas fa-chevron-right"></i>
-                </span>
-            </a>
+            <div class="homepage-products-category-button-container text-center mt-4">
+                <a href="{% url 'products' %}?category={{ stationery_category.category.name }}"
+                    class="btn btn-pink rounded-0">
+                    <span>Buy {{ stationery_category.category.display_name }}</span>
+                    <span class="icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
         </div>
-    </div>
+    </section>
     {% endfor %}
 
-    <div class="row">
+    <section class="row py-5 px-4">
         <div class="reviews-container col-10 offset-1">
             <h2 class="logo-font text-center mb-4">Reviews</h2>
-            <p>Read the thoughts of some of the most influential reviewers on the internet, as well as opinions from our own in-house reviewers.</p>
+            <p class="text-center">Read the thoughts of some of the most influential reviewers on the internet, as well
+                as opinions from our own in-house reviewers.</p>
             <div class="reviews-list d-flex flex-row flex-wrap justify-between">
                 {% for review in reviews %}
                 <a href="{% url 'review' review.id %}" class="reviews-list-item p-3 
@@ -141,21 +160,29 @@
                             {% endif %}
 
                             {% if review.author %}
-                            <small class="reviews-list-item-author">By: {{ review.author }}</small><br>
+                            <p class="homepage-products-list-item-author">By: {{ review.author }}</p>
+                            {% endif %}
+
+                            {% if review.content %}
+                            <p class="homepage-products-list-item-author">
+                                {{ review.content|truncatechars:140 }}
+                            </p>
                             {% endif %}
                         </div>
                     </div>
                 </a>
                 {% endfor %}
             </div>
-            <a href="{% url 'reviews' %}" class="btn btn-black rounded-0">
-                <span>See all Reviews</span>
-                <span class="icon">
-                    <i class="fas fa-chevron-right"></i>
-                </span>
-            </a>
+            <div class="homepage-products-category-button-container text-center mt-4">
+                <a href="{% url 'reviews' %}" class="btn btn-pink rounded-0">
+                    <span>See all Reviews</span>
+                    <span class="icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
         </div>
-    </div>
+    </section>
 
     <div class="btn-button shadow-sm rounded-0 border border-black">
         <a class="btn-link d-flex h-100">

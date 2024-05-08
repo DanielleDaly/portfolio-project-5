@@ -1,3 +1,30 @@
+.homepage-header {
+    min-height: 50vh;
+    background: url('/media/bookstore-unsplash.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+.homepage-header-contents {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.homepage-header-text-container {
+    max-width: 600px;
+}
+
+.homepage-header-text-container h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.homepage-products-section:nth-child(odd) {
+    background-color: #222;
+    color: #fff;
+}
+
 .homepage-products-list-item {
     margin-bottom: 1rem;
     background-color: #f3f2f4;
@@ -5,7 +32,11 @@
 }
 
 .homepage-products-list-item:hover {
-    box-shadow: 0 6px 10px rgba(0,0,0,.16);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .16);
+}
+
+.homepage-products-section:nth-child(odd) .homepage-products-list-item:hover {
+    box-shadow: 0 6px 10px rgba(255, 255, 255, .4);
 }
 
 .homepage-products-list-item:hover {
