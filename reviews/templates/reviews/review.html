@@ -60,10 +60,12 @@
                 </a>
 
 
-                {% if review.source %}
+                {% if review.source and review.source_url %}
                 <p class="mb-0">Read it on:
-                    <a class="text-link" href="{{ review.source_url }}" target="_blank" rel="noopener noreferrer">{{ review.source }}</a>
+                    <a class="text-link" href="{{ review.source_url }}" target="_blank" rel="sponsored">{{ review.source }}</a>
                 </p>
+                {% else %}
+                <p class="mb-0">Original review content by: {{ review.author }}</p>
                 {% endif %}
             </div>
         </div>
