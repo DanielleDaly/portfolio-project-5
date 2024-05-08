@@ -1,27 +1,172 @@
 {% extends "base.html" %}
 {% load static %}
+{% load reviews_tools %}
 
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+<link rel="stylesheet" href="{% static 'reviews/css/reviews.css' %}">
 {% endblock %}
 
-{% block content %}
-<div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font shadowed-title-text text-pink">
-                Books Bazaar
-            </h1>
-            <div class="my-5">
-                <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                </h4>
-            </div>
-        </div>
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
 </div>
 {% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row homepage-header">
+        <div class="col">
+            <h1 class="logo-font mb-4">Read more, pay less.</h1>
+            <h2 class="mb-3">Browse our collections of some of the finest books and stationery.</h2>
+            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+        </div>
+    </div>
+
+    {% for book_category in book_categories %}
+    <div class="row">
+        <div class="homepage-products-container col-10 offset-1">
+            <h2 class="logo-font text-center mb-4">{{ book_category.category.display_name }}</h2>
+            <p>{{ book_category.category.description }}</p>
+            <div class="homepage-products-list d-flex flex-row flex-wrap justify-between">
+                {% for product in book_category.products %}
+                <a href="{% url 'product_detail' product.id %}" class="homepage-products-list-item p-3 
+                    flex-grow-1 flex-shrink-1
+                    {% if forloop.last and forloop.counter|modulo:2 == 1 %}homepage-products-list-item-half-size{% endif %}">
+                    <div class="row">
+                        <div class="col-3">
+                            {% if product.image %}
+                            <img class="homepage-products-list-item-image card-img-top img-fluid"
+                                src="{{ product.image.url }}" alt="{{ product.name }}">
+                            {% else %}
+                            <img class="homepage-products-list-item-image card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ product.name }}">
+                            {% endif %}
+                        </div>
+                        <div class="col-9">
+                            <h3 class="homepage-products-list-item-title">{{ product.name }}</h3>
+
+                            {% if product.author %}
+                            <small class="homepage-products-list-item-author">By: {{ product.author }}</small><br>
+                            {% endif %}
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+            <a href="{% url 'products' %}?category={{ book_category.category.name }}"
+                class="btn btn-black rounded-0">
+                <span>Browse {{ book_category.category.display_name }}</span>
+                <span class="icon">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+
+    {% for stationery_category in stationery_categories %}
+    <div class="row">
+        <div class="homepage-products-container col-10 offset-1">
+            <h2 class="logo-font text-center mb-4">{{ stationery_category.category.display_name }}</h2>
+            <p>{{ stationery_category.category.description }}</p>
+            <div class="homepage-products-list d-flex flex-row flex-wrap justify-between">
+                {% for product in stationery_category.products %}
+                <a href="{% url 'product_detail' product.id %}" class="homepage-products-list-item p-3 
+                    flex-grow-1 flex-shrink-1
+                    {% if forloop.last and forloop.counter|modulo:2 == 1 %}homepage-products-list-item-half-size{% endif %}">
+                    <div class="row">
+                        <div class="col-3">
+                            {% if product.image %}
+                            <img class="homepage-products-list-item-image card-img-top img-fluid"
+                                src="{{ product.image.url }}" alt="{{ product.name }}">
+                            {% else %}
+                            <img class="homepage-products-list-item-image card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ product.name }}">
+                            {% endif %}
+                        </div>
+                        <div class="col-9">
+                            <h3 class="homepage-products-list-item-title">{{ product.name }}</h3>
+
+                            {% if product.author %}
+                            <small class="homepage-products-list-item-author">By: {{ product.author }}</small><br>
+                            {% endif %}
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+            <a href="{% url 'products' %}?category={{ stationery_category.category.name }}"
+                class="btn btn-black rounded-0">
+                <span>Buy {{ stationery_category.category.display_name }}</span>
+                <span class="icon">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="row">
+        <div class="reviews-container col-10 offset-1">
+            <h2 class="logo-font text-center mb-4">Reviews</h2>
+            <p>Read the thoughts of some of the most influential reviewers on the internet, as well as opinions from our own in-house reviewers.</p>
+            <div class="reviews-list d-flex flex-row flex-wrap justify-between">
+                {% for review in reviews %}
+                <a href="{% url 'review' review.id %}" class="reviews-list-item p-3 
+                    flex-grow-1 flex-shrink-1
+                    {% if forloop.last and forloop.counter|modulo:2 == 1 %}reviews-list-item-half-size{% endif %}">
+                    <div class="row">
+                        <div class="col-3">
+                            {% if review.product.image %}
+                            <img class="reviews-list-item-image card-img-top img-fluid"
+                                src="{{ review.product.image.url }}" alt="{{ review.product.name }}">
+                            {% else %}
+                            <img class="reviews-list-item-image card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ review.product.name }}">
+                            {% endif %}
+                        </div>
+                        <div class="col-9">
+                            <h3 class="reviews-list-item-title">{{ review.title }}</h3>
+
+                            {% if review.product.author %}
+                            <p class="reviews-list-item-subtitle mb-0">A review of {{ review.product.author }}'s
+                                {{ review.product.name }}</p>
+                            {% else %}
+                            <p class="reviews-list-item-subtitle mb-0">A review of {{ review.product.name }}</p>
+                            {% endif %}
+
+                            {% if review.author %}
+                            <small class="reviews-list-item-author">By: {{ review.author }}</small><br>
+                            {% endif %}
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+            <a href="{% url 'reviews' %}" class="btn btn-black rounded-0">
+                <span>See all Reviews</span>
+                <span class="icon">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <div class="btn-button shadow-sm rounded-0 border border-black">
+        <a class="btn-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>
+    </div>
+    {% endblock %}
+
+    {% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('.btn-link').click(function (e) {
+            window.scrollTo(0, 0)
+        })
+    </script>
+    {% endblock %}
