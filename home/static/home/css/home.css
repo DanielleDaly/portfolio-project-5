@@ -26,6 +26,10 @@
     color: #222;
 }
 
+.homepage-products-list-item-buy-now {
+    color: #e0038b;
+}
+
 @media (min-width: 992px) {
     .homepage-products-list {
         gap: 0 1rem;

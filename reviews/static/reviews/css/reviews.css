@@ -26,6 +26,10 @@
     color: #222;
 }
 
+.reviews-list-item-read-review {
+    color: #e0038b;
+}
+
 @media (min-width: 992px) {
     .reviews-list {
         gap: 0 1rem;
