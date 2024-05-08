@@ -1,6 +1,7 @@
 .homepage-header {
     min-height: 50vh;
-    background: url('/media/bookstore-unsplash.jpg') no-repeat top center;
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
 }
 
@@ -74,5 +75,32 @@
         flex-grow: 0 !important;
         flex-grow: 0 !important;
         flex-basis: calc(50% - 0.5rem) !important;
+    }
+}
+
+/* -------------------------------- Media Queries */
+
+/* Background image on screen sizes */
+@media (min-width: 1200px) {
+    .homepage-header {
+        background-image: url('/media/bookstore-unsplash-extra-large.jpg');
+    }
+}
+
+@media (min-width: 992px) {
+    .homepage-header {
+        background-image: url('/media/bookstore-unsplash-large.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+    .homepage-header {
+        background-image: url('/media/bookstore-unsplash-medium.jpg');
+    }
+}
+
+@media (max-width: 767px) {
+    .homepage-header {
+        background-image: url('/media/bookstore-unsplash-small.jpg');
     }
 }

@@ -99,7 +99,8 @@ body {
     color: #130b2c !important;
 }
 
-.text-pink {
+.text-pink,
+.text-info {
     color: #e0038b !important;
 }
 
