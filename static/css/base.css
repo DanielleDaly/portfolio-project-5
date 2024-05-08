@@ -62,9 +62,13 @@ body {
     color: #fff !important;
 }
 
-.btn-pink,
-.btn-pink:hover {
+.btn-pink {
     background: #e0038b;
+    color: white;
+}
+
+.btn-pink:hover {
+    background: #b3026f;
     color: white;
 }
 
@@ -77,7 +81,8 @@ body {
 .btn-outline-pink:hover,
 .btn-outline-pink:active,
 .btn-outline-pink:focus {
-    background: #e0038b;
+    background: #b3026f;
+    border: 1px solid #b3026f;
     color: #fff !important;
 }
 
@@ -100,7 +105,7 @@ body {
 }
 
 .text-pink,
-.text-info {
+.fixed-top .text-info {
     color: #e0038b !important;
 }
 
@@ -163,6 +168,14 @@ a.category-badge > span.badge:hover {
 .read-now-link,
 .breadcrumbs a {
     color: #e0038b !important;
+}
+
+.email-link:hover,
+.text-link:hover,
+.product-external-link:hover,
+.read-now-link:hover,
+.breadcrumbs a:hover {
+    color: #b3026f !important;
 }
 
 input[name='q']::placeholder {
@@ -337,6 +350,8 @@ input[name='q']::placeholder {
     }
 
     .nav-link:hover,
+    a.text-info:focus,
+    a.text-info:hover,
     .dropdown-item:active {
         background-color: #e0038b;
         color: #fff !important;
