@@ -19,7 +19,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font mb-4">Reviews</h2>
+            <h1 class="logo-font mb-4">Reviews</h1>
+            <hr>
         </div>
     </div>
     <div class="row">
@@ -41,7 +42,7 @@
                             {% endif %}
                         </div>
                         <div class="col-9">
-                            <h3 class="reviews-list-item-title">{{ review.title }}</h3>
+                            <h2 class="reviews-list-item-title">{{ review.title }}</h2>
 
                             {% if review.product.author %}
                             <p class="reviews-list-item-subtitle mb-0">A review of {{ review.product.author }}'s {{ review.product.name }}</p>

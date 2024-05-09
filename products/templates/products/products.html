@@ -14,7 +14,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font">Products</h2>
+            <h1 class="logo-font">Products</h1>
             {% for category in current_categories %}
             <a href="{% url 'products' %}?category={{ category.name }}" class="category-badge text-decoration-none">
                 <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">
@@ -63,10 +63,10 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
+            <div class="product-list row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    <div class="card h-100 border-0">
+                    <div class="product-list-item card h-100 border-0">
                         {% if product.image %}
                         <a class="product-image-link" href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -78,7 +78,7 @@
                         </a>
                         {% endif %}
                         <div class="card-body pb-0">
-                            <p class="mb-0">{{ product.name }}</p>
+                            <h2 class="product-list-item-title mb-0">{{ product.name }}</h2>
 
                             {% if product.author %}
                             <small class="text-muted">By: {{ product.author }}</small><br>

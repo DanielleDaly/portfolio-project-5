@@ -269,6 +269,10 @@ input[name='q']::placeholder {
     object-fit: contain;
 }
 
+.product-list-item-title {
+    font-size: 1.5rem;
+}
+
 .product-image-link {
     overflow: hidden;
 }

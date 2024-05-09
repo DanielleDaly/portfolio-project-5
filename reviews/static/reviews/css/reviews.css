@@ -13,6 +13,7 @@
 }
 
 .reviews-list-item-title {
+    font-size: 1.75rem;
     color: #e0038b;
     text-decoration: none;
 }
@@ -28,6 +29,10 @@
 
 .reviews-list-item-read-review {
     color: #e0038b;
+}
+
+.review-subtitle {
+    font-size: 1.25rem;
 }
 
 @media (min-width: 992px) {
