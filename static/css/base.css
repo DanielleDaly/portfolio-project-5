@@ -10,6 +10,23 @@ body {
     font-family: 'Urbanist';
 }
 
+.footer {
+    width: calc(100% + 1.5rem);
+    margin-left: -1.5rem;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list-item-link {
+    color: #fff;
+}
+
+.footer-list-item-link:hover {
+    color: #fff;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
