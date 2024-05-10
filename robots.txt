@@ -3,3 +3,4 @@ Disallow: /accounts/
 Disallow: /profile/
 Disallow: /bag/
 Disallow: /checkout/
+Sitemap: https://books-bazaar-08785163d42b.herokuapp.com/sitemap.xml
