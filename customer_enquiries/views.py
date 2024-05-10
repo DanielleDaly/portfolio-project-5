@@ -11,8 +11,8 @@ def customer_enquiry(request):
         form = CustomerEnquiryForm(request.POST)
         if form.is_valid():
             customer_enquiry = form.save()
-            messages.success(request, f'Thank you. Your enquiry was sent successfully.<br> \
-                             We will contact you within the next 24 hours.<br> \
+            messages.success(request, f'Thank you. Your enquiry was sent successfully. \
+                             We will contact you within the next 24 hours. \
                              Your enquiry number is: {customer_enquiry.enquiry_number}')
             return redirect(reverse('customer_enquiry'))
         else:
