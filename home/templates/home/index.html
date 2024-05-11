@@ -44,10 +44,10 @@
                         <div class="col-3">
                             {% if product.image %}
                             <img class="homepage-products-list-item-image card-img-top img-fluid"
-                                src="{{ product.image.url }}" alt="{{ product.name }}">
+                                src="{{ product.image.url }}" alt="Product image for {{ product.name }}">
                             {% else %}
                             <img class="homepage-products-list-item-image card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
-                                alt="{{ product.name }}">
+                                alt="No product image for {{ product.name }}">
                             {% endif %}
                         </div>
                         <div class="col-9">
@@ -95,10 +95,10 @@
                         <div class="col-3">
                             {% if product.image %}
                             <img class="homepage-products-list-item-image card-img-top img-fluid"
-                                src="{{ product.image.url }}" alt="{{ product.name }}">
+                                src="{{ product.image.url }}" alt="Product image for {{ product.name }}">
                             {% else %}
                             <img class="homepage-products-list-item-image card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
-                                alt="{{ product.name }}">
+                                alt="No product image for {{ product.name }}">
                             {% endif %}
                         </div>
                         <div class="col-9">
@@ -146,10 +146,10 @@
                         <div class="col-3">
                             {% if review.product.image %}
                             <img class="reviews-list-item-image card-img-top img-fluid"
-                                src="{{ review.product.image.url }}" alt="{{ review.product.name }}">
+                                src="{{ review.product.image.url }}" alt="Product image for review of {{ review.product.name }}">
                             {% else %}
                             <img class="reviews-list-item-image card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
-                                alt="{{ review.product.name }}">
+                                alt="No product image for review of {{ review.product.name }}">
                             {% endif %}
                         </div>
                         <div class="col-9">

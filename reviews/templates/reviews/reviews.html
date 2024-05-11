@@ -35,10 +35,10 @@
                         <div class="col-3">
                             {% if review.product.image %}
                             <img class="reviews-list-item-image card-img-top img-fluid" src="{{ review.product.image.url }}"
-                                alt="{{ review.product.name }}">
+                                alt="Image for review of {{ review.product.name }}">
                             {% else %}
                             <img class="reviews-list-item-image card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
-                                alt="{{ review.product.name }}">
+                                alt="No image for review of {{ review.product.name }}">
                             {% endif %}
                         </div>
                         <div class="col-9">

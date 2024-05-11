@@ -1,9 +1,7 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.contrib import messages
+from django.shortcuts import render, get_object_or_404
 
 from .models import Review
 
-# Create your views here.
 
 def all_reviews(request):
     """ A view to show all reviews """

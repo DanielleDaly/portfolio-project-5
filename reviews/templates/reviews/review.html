@@ -22,11 +22,11 @@
                 {% if review.product.image %}
                 <a href="{{ review.product.image.url }}" target="_blank">
                     <img class="card-img-top img-fluid" src="{{ review.product.image.url }}"
-                        alt="{{ review.product.name }}">
+                        alt="Image for review of {{ review.product.name }}">
                 </a>
                 {% else %}
                 <a href="">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ review.product.name }}">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="No image for review of {{ review.product.name }}">
                 </a>
                 {% endif %}
             </div>

@@ -3,7 +3,6 @@ from django.shortcuts import render, get_object_or_404
 from products.models import Product, Category
 from reviews.models import Review
 
-# Create your views here.
 
 def index(request):
     """ A view to return the index page """

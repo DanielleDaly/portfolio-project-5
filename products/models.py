@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class Category(models.Model):
 
     class Meta:
@@ -20,6 +21,7 @@ class Category(models.Model):
 
     def get_image(self):
         return self.image
+
 
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)

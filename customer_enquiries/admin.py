@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import CustomerEnquiry
 
+
 class CustomerEnquiryAdmin(admin.ModelAdmin):
     readonly_fields = ('enquiry_number', 'date',)
 
@@ -11,5 +12,6 @@ class CustomerEnquiryAdmin(admin.ModelAdmin):
                     'email', 'phone_number',)
 
     ordering = ('-date',)
+
 
 admin.site.register(CustomerEnquiry, CustomerEnquiryAdmin)

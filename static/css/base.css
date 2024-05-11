@@ -371,8 +371,6 @@ input[name='q']::placeholder {
     }
 
     .nav-link:hover,
-    a.text-info:focus,
-    a.text-info:hover,
     .dropdown-item:active {
         background-color: #e0038b;
         color: #fff !important;
