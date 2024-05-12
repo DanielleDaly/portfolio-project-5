@@ -433,3 +433,212 @@ All product images on the website were taken from [easons.com](https://easons.co
 
 - [Markdown toc](http://ecotrust-canada.github.io/markdown-toc/)
     - Markdown toc was used to create my table of contents.
+
+## Deployment
+### GitHub, GitPod, Git, Heroku and Amazon AWS S3
+- Project Setup
+    - I used the [Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template) as the base template for this project.
+    - To use this template, locate it on the GitHub repository and click the "Use this template" button, and then select "Create a new repository" from the dropdown options.
+    - Give your project a name that is unique within your GitHub account and create the repository.
+    - Once the GitHub repository is created, it can be added as a Workspace in GitPod.
+    - I made regular commits to the repository to ensure commits contained a single piece of logical work.
+
+- App Deployment
+    - To deploy the application to Heroku, I followed the steps below:
+        - Create an App on my [Heroku Dashboard](https://dashboard.heroku.com/apps)
+            -  Click the "New" button, then click "Create new app"
+            - Give the app a name. This name must be unique.
+            - Select the region closest to me (Europe)
+            - Click "Create app"
+        
+    - Database was set up in ElephantSQL by following the steps below:
+        - Logged in to ElephantSQL.com to access my dashboard
+        - Clicked "Create New Instance"
+        - Set up a new plan (Free Tiny Turtle)
+        - Selected the region closest to me (EU-West-1 (Ireland))
+        - Clicked "Review" and then "Create Instance"
+        - I then returned to the ElephantSQL dashboard and clicked on the database instance name for this project
+        - I then copied the "Database URL" for use later in the process
+    
+    - Connect the Database to the Heroku app
+        - I went to the newly created app in Heroku
+        - Clicked on the "Settings" tab and then clicked "Reveal Config Vars"
+        - Add a new Key of "DATABASE_URL" and paste in the ElephantSQL database URL that I copied earlier as the Value.
+    
+    - Configure the new database in the project codebase
+        - Install the required packages using 
+        `pip3 install dj_database_url==0.5.0 psycopg2`
+        - Freeze them to the requirements.txt file with `pip3 freeze > requirements.txt`
+        - Import "import dj_database_url" in the settings.py file
+        - Replace the existing database connection settings with
+        ``` python
+            DATABASES = {
+                'default': dj_database_url.parse('DATABASE_URL')
+            }
+        ```
+        > [!CAUTION]
+        > DO NOT commit this file with your database string in the code, this is temporary so that we can connect to the new database and make migrations.
+        - In the terminal, run the "showmigrations" command to confirm you are connected to the external database
+        ` python3 manage.py showmigrations`
+        - On seeing the list of migrations unchecked, it is safe to run the migrations with `python3 manage.py migrate`
+        - Load in the "fixtures" in the correct order with `python3 manage.py loaddata categories` then `python3 manage.py loaddata products`
+        - Create a database superuser with `python3 manage.py createsuperuser` and follow the prompts to create the user
+        - Revert the changes to the database config in the "settings.py" file so that the live database connection details are not stored in the repository
+
+    - Gunicorn
+        - The app requires Gunicorn to be able to run. Install it with `pip3 install Gunicorn`
+        - Create a "Procfile" to tell Heroku how to run the app with `touch Procfile`
+        - In the Procfile, paste the following, replacing the <app_name> with the name of your app. In this case it is "books-bazaar"
+            ```
+            web: gunicorn <app_name>.wsgi:application
+            ```
+    - Log into Heroku in the Terminal with `heroku login -i`
+        - If you get an error when you log into Heroku saying "IP Mismatch", then follow the steps on this [Stack Overflow answer](https://stackoverflow.com/questions/63363085/ip-address-mismatch-on-signing-into-heroku-cli/70632778#70632778) to resolve that issue.
+        - Temporarily disable the collection of static files on Heroku with `heroku config:set DISABLE_COLLECTSTATIC=1 --app <app_name>`, using the `--app` flag if you have more than one App in your Heroku account. This will be reenabled later once the Amazon AWS S3 bucket is set up with the images and static files
+        - Add the Heroku app URL into the "ALLOWED_HOSTS" of your "settings.py" file to allow access to your newly deployed app.
+        `ALLOWED_HOSTS = ["<heroku app name>.herokuapp.com", "localhost"]`
+        - Commit your changes to GitHub
+        - Set up the remote connection to the Heroku repository with `heroku git:remote -a <heroku_app_name>`
+        -Push the project to Heroku with `git push heroku main`, and Heroku will build your app
+    
+    - Set up automatic deploys on Heroku
+        - Go to your app on Heroku and click on the "Deploy" tab
+        - Search for your repository
+        - Once found, enable automatic deploys and select the "main" branch
+        - Now any time you push to the main branch, Heroku will automatically deploy the latest version of your app
+    
+    - Amazon AWS
+        - Amazon AWS was used to store both static files and media files.
+        - Firstly I created an AWS account and worked through the sign-up process. Once my account was set up I was able to set my project up on AWS.
+
+        - Create S3 the bucket
+            - First thing was to create a new bucket on the AWS S£ service.
+            - From the main dashboard search for S£ and then click to get started.
+            - Click on the Create bucket button.
+            - Give the bucket a name and select your region.
+            - Then uncheck the block public access and acknowledge that the bucket will now be public.
+            - Then click create bucket.
+    
+        - Bucket settings
+            - Properties
+                - Navigate to the bucket properties settings.
+                - Turn on static website hosting.
+                - In the index and error add index.html and error.html.
+                - Click Save.
+            - Permissions
+                - Click on the buckets Permissions tabs.
+                - Firstly paste in the following cors config.
+                ```
+                [
+                    {
+                        "AllowedHeaders": [
+                            "Authorization"
+                        ],
+                        "AllowedMethods": [
+                            "GET"
+                        ],
+                        "AllowedOrigins": [
+                            "*"
+                        ],
+                        "ExposeHeaders": []
+                    }
+                    ]
+                ```
+            - Then in the bucket policy tap, click on generate policy.
+            - Policy
+            - Select S3 bucket policy
+            - Add * to the principal field to select all principals
+            - Set the action to get object.
+            - Paste in your ARN which is available on the previous page.
+            - Click, add statement
+            - Then click, generate policy.
+            - Now copy and paste your new policy into the bucket policy.
+            - Add /* onto the end of the resources key
+            - Click Save.
+
+        - Access control list
+            - In the access control list tab set the list objects permission to everyone.
+    
+        - Create a User
+            - To create a user for the bucket we need to use another Amazon service.
+            - Back in the main dashboard search for IAM and select it.
+     
+        - Create a Group
+            - Firstly we need to create a group to put our user in.
+            - Click create a new group and name it.
+            - Click through to the end and save the group.
+        
+        - Create a policy
+            - In our group click, policy and then, create policy.
+            - Select the JSON tab and then import managed policies.
+            - Search S3 and select AmazonS3FullAccess and import.
+            - In the resources section paste in our arn from before.
+            - Click through to review the policy.
+            - Fill in name and description and then click generate policy.
+            - Back in your group click permission and then attach the policy.
+            - Find the policy you've just created and attach it.
+
+        - Create the User
+            - Select Users from the sidebar and then click, add user.
+            - Create a user name and select programmatic access then click next.
+            - Then select your group to add your user to.
+            - Click through to the end and then click create user.
+            - **Make sure to now download the CSV file as it contains the users keys needed to access from our app.**
+
+    - Connecting to Django
+        - Once our AWS has been set up we now need to connect it to Django.
+        - Firstly two packages are needed.
+            - boto 3
+            - Django storages
+            ```
+                pip3 install boto3
+                pip3 install django-storages
+            ```
+        - Then add to our requirements.
+            ```
+                pip3 freeze > requirements.txt
+            ```
+        - We then add storages into our installed apps in settings.py
+        - We then add the following settings to our settings.py
+        - We create an environmental variable to only run this code when on Heroku. "USE_AWS"
+            ``` python
+                if "USE_AWS" in os.environ:
+
+                    # Bucket Config
+                    AWS_STORAGE_BUCKET_NAME = '<bucket name>'
+                    AWS_S3_REGION_NAME = '<your region>'
+                    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+                    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+                    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+                    # static and media file storage
+                    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+                    STATICFILES_LOCATION = 'static'
+                    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+                    MEDIAFILES_LOCATION = 'media'
+
+                    # Override static and media URLs in production
+                    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+                    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+            ```
+        - Then back in Heroku we click the settings and reveal config vars.
+        - Then set up the environmental variables needed.
+        - We then create a custom_storages.py to tell Django that in production we want to use s3 to store our static and media files.
+        - We Firstly need to import S3Boto3Storage.
+        - then we set up our new classes to tell Django where to store the files.
+            ``` python
+                class StaticStorage(S3Boto3Storage):
+                    location = settings.STATICFILES_LOCATION
+
+
+                class MediaStorage(S3Boto3Storage):
+                    location = settings.MEDIAFILES_LOCATION
+            ```
+    - Once all the settings are done we can now push to GitHub and Heroku
+
+    - Add our media to AWS
+        - The final step is to add our media to AWS.
+        - In your bucket create a new folder called media.
+        - Select upload and add your image files.
+        - Then select to grant public access.
+        - And then upload the files.
