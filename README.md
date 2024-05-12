@@ -156,13 +156,13 @@ The project has been deployed to Heroku and can be seen by opening [books-bazaar
 ## Wireframes
 - For the initial phase of design for the project I created wireframe layouts using [Balsamiq](https://balsamiq.com/). You can download these wireframes in PDF format but using the appropriate links below:
     - Desktop
-        - Wireframe layouts for Desktop
+        - [Wireframe layouts for Desktop]()
 
     - Tablet
-        - Wireframe layouts for Tablet
+        - [Wireframe layouts for Tablet]()
 
     - Phone
-        - Wireframe layouts for Phone
+        - [Wireframe layouts for Phone]()
 
 ## Database Models and Schema
 ### Models
@@ -356,6 +356,42 @@ All product images on the website were taken from [easons.com](https://easons.co
     - Since only website admins should see the contents of customer enquiries, it would not be viable, from a security point of view, to have a user-facing frontend built to handle enquiries.
     - However, this may be a consideration for the future if the admin area does not prove sufficient for handling enquiries.
 
+## Web Marketing
+### Newsletter Sign-up
+- One of the web marketing techniques used on the website is a Newsletter Sign-up that collects users' email addresses and saves them to a MailChimp account. The [MailChimp](https://mailchimp.com) account can then be used to create and send email campaigns to users.
+- The Sign-up form for the Newsletter is in the footer of the website so is available on every page.
+- When a user enters their email address, then will then see a confirmation message thanking them for signing up.
+
+    - Sign-up Form
+    <div align="center"><img src="readme-images/screenshots/marketing/newsletter-signup-form.png" alt="Screenshot of the Newsletter Sign-up Form"></div>
+
+    - Sign-up confirmation
+    <div align="center"><img src="readme-images/screenshots/marketing/newsletter-signup-confirmation.png" alt="Screenshot of the Newsletter Sign-up Confirmation Message"></div>
+
+    - MailChimp audience list
+    <div align="center"><img src="readme-images/screenshots/marketing/newsletter-contacts.png" alt="Screenshot of the Newsletter Audience in MailChimp"></div>
+
+### SEO
+- Another web marketing tool employed by the website is SEO. This is implemented in a number of ways.
+
+#### Meta Description and Keywords
+- Meta Description
+    - The website description helps users to see the purpose of the website in search results on Google, Bing and other search engines.
+    - A well thought out meta description can help a website to stand out from the crowd and help to target a specific audience.
+
+- Meta Keywords
+    - The website uses meta keywords to help drive organic search traffic to the site.
+    - Choosing specific keywords also helps to target specific users.
+    - Using keywords such as the product categories, as well as "Buy Irish" should help to get the website to show up in the search results of book lovers based in Ireland.
+
+### Social Media Marketing
+- Social media can be an excellent marketing tool for any online business.
+- With the large amount of users across all demographics, employing a well planned out social media marketing strategy can yield amazing results.
+- Having a page / account for your business and posting content on social media is one of the most efficient methods of driving traffic to your website.
+    - Facebook Business Page mock-up
+    <div align="center"><img src="readme-images/screenshots/marketing/marketing-facebook-page.jpeg" alt="Mock-up of a Facebook Business Page for Books Bazaar"></div>
+
+
 ## Technologies used.
 - The application was built using the Django full-stack framework based on the Python programming language.
 - For each section of the website a separate Django app was built.
@@ -427,6 +463,9 @@ All product images on the website were taken from [easons.com](https://easons.co
 
 - [Balsamiq](https://balsamiq.com/)
     - I have used Balsamiq Wireframes for the creation of the Wireframes which were used as the basis of the template layouts for the project.
+
+- [Photopea](https://photopea.com)
+    - I used photopea.com to create the mock-up of the Facebook Business Page for the Books Bazaar online store.
 
 - [Am I responsive](http://ami.responsivedesign.is/)
     - Responsive screenshots of the project were taken using AmIResponsive.
