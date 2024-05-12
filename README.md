@@ -355,3 +355,81 @@ All product images on the website were taken from [easons.com](https://easons.co
     - Customer Enquiries are managed through the website admin area.
     - Since only website admins should see the contents of customer enquiries, it would not be viable, from a security point of view, to have a user-facing frontend built to handle enquiries.
     - However, this may be a consideration for the future if the admin area does not prove sufficient for handling enquiries.
+
+## Technologies used.
+- The application was built using the Django full-stack framework based on the Python programming language.
+- For each section of the website a separate Django app was built.
+- Each app has a views.py, urls.py file to create the pages and routes / URLs it requires.
+- A models.py file is used to create the database models and migrations.
+- On the apps that require a form, a forms.py file was created for handling these forms.
+- The e-commerce payments are implemented using the [Stripe](https://stripe.com) payments system.
+- The final website / application is deployed on Heroku.
+- Static files and images are stored in Amazon AWS S3 buckets.
+
+### Languages Used.
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - HTML5 was used to create the structure, content and base layout of each page.
+
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+    - CSS3 was used to then style the pages and make it responsive through media queries. Some of the website interactions are enhanced using CSS transitions.
+
+- [javaScript](https://en.wikipedia.org/wiki/JavaScript)
+    - JavaScript is used within the website for interactivity purposes, including the product sorting dropdown, MailChimp Newsletter sign-up and Stripe payments.
+
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+    - The backend functionality of the website is built using Python.
+
+### Django and Django extensions used
+
+- [Django](https://www.djangoproject.com/)
+    - Django was used to build the project.
+
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/)
+    - Django allauth was used to create the user sign-in functionality for the website / application.
+
+- [Django Countries](https://pypi.org/project/django-countries/)
+    - Django Countries was used for the "countries" select field in the Order and User Profile forms.
+
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+    - Django Crispy Forms were used to utilise the bootstrap form layouts and styling.
+
+### Frameworks Libraries and Programs.
+
+- [Stripe](https://stripe.com/ie)
+    - Stripe was used for taking payments on the website.
+
+- [Heroku](https://signup.heroku.com/)
+    - The website / application was deployed on the Heroku platform.
+
+- [Amazon AWS](https://aws.amazon.com/)
+    - Amazon AWS S3 is used to store static files and images for the site.
+
+- [Gunicorn](https://gunicorn.org/)
+    - Gunicorn was used for deploying the project to Heroku.
+
+- [Google Fonts](https://fonts.google.com/)
+    - The font, Urbanist, used across the website is imported from Google Fonts.
+
+- [Bootstrap 4](https://getbootstrap.com/)
+    - Bootstrap 4 is used for its grid system, form inputs and its helper and utility classes.
+
+- [Quick Database Diagrams](https://www.quickdatabasediagrams.com/)
+    - Quick Database Diagrams was used to generate the database diagram.
+
+- [Git](https://git-scm.com/)
+    - Git was used as a version control system. All Git commands were written directly in the Terminal on VS Code.
+
+- [Github](https://github.com/)
+    - A GitHub repository is used as source control for the project's codebase.
+
+- [Gitpod](https://gitpod.io/)
+    - The workspace for the project is provided by GitPod. I used the [Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template) as a template for this project.
+
+- [Balsamiq](https://balsamiq.com/)
+    - I have used Balsamiq Wireframes for the creation of the Wireframes which were used as the basis of the template layouts for the project.
+
+- [Am I responsive](http://ami.responsivedesign.is/)
+    - Responsive screenshots of the project were taken using AmIResponsive.
+
+- [Markdown toc](http://ecotrust-canada.github.io/markdown-toc/)
+    - Markdown toc was used to create my table of contents.
