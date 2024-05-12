@@ -104,3 +104,43 @@ The project has been deployed to Heroku and can be seen by opening [books-bazaar
     As a website owner / admin I can delete products so that I can prevent customers from purchasing products that are no longer available
     - [Admin Area](https://github.com/DanielleDaly/portfolio-project-5/issues/24)
     As a website owner / admin I can access an admin area so that I can review products, orders, users and perform other administrative tasks
+
+## Wireframes
+- For the initial phase of design for the project I created wireframe layouts using [Balsamiq](https://balsamiq.com/). You can download these wireframes in PDF format but using the appropriate links below:
+    - Desktop
+        - Wireframe layouts for Desktop
+    - Tablet
+        - Wireframe layouts for Tablet
+    - Phone
+        - Wireframe layouts for Phone
+
+## Database Models and Schema
+### Models
+- Users
+    - User
+        - From the Django Allauth package containing the username, email, and password
+    - Userprofile
+        - Model containing the user's details which can be re-used when placing future orders
+
+- Products
+    - Product
+        - Contains the product information for each product item that is available in the store
+    - Category
+        - Contains the category information for products in the store
+
+- Reviews
+    - Contains the information for the Product Reviews
+
+- Customer Enquiries
+    - CustomerEnquiry
+        - Contains the information for the Customer Enquiries submitted on the Contact Us page
+
+- Checkout (Orders)
+    - Order
+        - Contains the information for an order, including the customer and the order contents
+    - OrderLineItem
+        - Contains the information on the individual line items in an order including the product and quantity
+
+- Database Diagram
+    - Below you will see the Database Diagram which shows the structure of the models in the database and the relationships between objects
+    
