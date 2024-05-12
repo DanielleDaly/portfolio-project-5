@@ -492,6 +492,14 @@ All product images on the website were taken from [easons.com](https://easons.co
             ```
             web: gunicorn <app_name>.wsgi:application
             ```
+
+    - Heroku Python Version
+        - The version that is running on Python apps on Heroku by default is earlier than the required version for sending emails over SMTP through Gmail.
+        - To solve this issue it is required to create a file named "runtime.txt" at the project root to specify a later version of Python to run the Heroku app with.
+        - Create the file "runtime.txt" in the root directory of your project and in the file paste the below:
+            `python-3.9.19`
+        - Commit and push this change to your GitHub repository
+
     - Log into Heroku in the Terminal with `heroku login -i`
         - If you get an error when you log into Heroku saying "IP Mismatch", then follow the steps on this [Stack Overflow answer](https://stackoverflow.com/questions/63363085/ip-address-mismatch-on-signing-into-heroku-cli/70632778#70632778) to resolve that issue.
         - Temporarily disable the collection of static files on Heroku with `heroku config:set DISABLE_COLLECTSTATIC=1 --app <app_name>`, using the `--app` flag if you have more than one App in your Heroku account. This will be reenabled later once the Amazon AWS S3 bucket is set up with the images and static files
@@ -709,6 +717,9 @@ All product images on the website were taken from [easons.com](https://easons.co
 
 - Homepage Hero image
     - The homepage hero image is from [Unsplash.com](https://unsplash.com). I have made some adjustments to the image.
+
+### Deployment Steps
+- The steps taken to deploy the project on Heroku, ElephantSQL and Amazon AWS were taken from the Code Institute lessons, as well as the [AWS Changes Sheet](https://codeinstitute.s3.amazonaws.com/fullstack/AWS%20changes%20sheet.pdf) that is linked in the lessons
 
 ### General Issues
 - Heroku "IP Address Mismatch" issue
