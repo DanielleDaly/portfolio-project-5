@@ -143,4 +143,4 @@ The project has been deployed to Heroku and can be seen by opening [books-bazaar
 
 - Database Diagram
     - Below you will see the Database Diagram which shows the structure of the models in the database and the relationships between objects
-    
+    <div align="center"><img src="readme-images/database/database-schema.png" alt="Image of the database schema"></div>
