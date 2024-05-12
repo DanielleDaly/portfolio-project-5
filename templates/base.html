@@ -192,7 +192,7 @@
             </div>
             <div class="col col-12 col-md-4 mb-4">
                 <h4 class="text-pink">Contact Us</h4>
-                <ul class="footer-list p-0">
+                <ul class="footer-list mb-4 p-0">
                     <li class="footer-list-item mb-2">
                         <a class="footer-list-item-link" href="{% url 'customer_enquiry' %}">Customer Enquiry</a>
                     </li>
@@ -200,6 +200,54 @@
                         <a class="footer-list-item-link" href="mailto:booksbazaarproject@gmail.com">booksbazaarproject@gmail.com</a>
                     </li>
                 </ul>
+                <h4 class="text-pink">Newsletter Signup</h4>
+                <ul class="footer-list p-0">
+                    <li class="footer-list-item mb-2">
+                        Enter your email address below to sign up for exclusive offers, coupons and book signing announcements.
+                        <div id="mc_embed_shell" class="newsletter-signup mx-auto mx-md-0">
+                            <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet"
+                                type="text/css">
+                            <div id="mc_embed_signup">
+                                <form
+                                    action="https://gmail.us17.list-manage.com/subscribe/post?u=0d2f71de6a2afa68ff71c1369&amp;id=d786d5c341&amp;f_id=000fc5e3f0"
+                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                    class="validate" target="_blank">
+                                    <div id="mc_embed_signup_scroll">
+                                        <div class="mc-field-group">
+                                            <label for="mce-EMAIL" class="text-center text-md-left">Email Address <span
+                                                    class="asterisk">*</span></label>
+                                            <input type="email" name="EMAIL"
+                                                class="required email mx-auto mx-md-0 mb-2 py-1 px-2" id="mce-EMAIL"
+                                                required="" value="" placeholder="Email Address">
+                                        </div>
+                                        <div id="mce-responses" class="clear foot">
+                                            <div class="response" id="mce-error-response" style="display: none;">
+                                            </div>
+                                            <div class="response" id="mce-success-response" style="display: none;">
+                                            </div>
+                                        </div>
+                                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                            /* real people should not fill this in and expect good things - do not
+                                            remove this or risk form bot signups */
+                                            <input type="text" name="b_0d2f71de6a2afa68ff71c1369_d786d5c341"
+                                                tabindex="-1" value="">
+                                        </div>
+                                        <div class="optionalParent">
+                                            <div class="clear foot text-center">
+                                                <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                                    class="btn btn-pink rounded-0" value="Sign Up">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row flex-row align-items-start justify-content-start">
+            <div class="col col-12">
                 <span class="footer-copyright">&copy; Books Bazaar {% now "Y" %}</span>
             </div>
         </div>
@@ -208,6 +256,27 @@
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
+    </script>
+
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+            fnames[1] = 'FNAME';
+            ftypes[1] = 'text';
+            fnames[2] = 'LNAME';
+            ftypes[2] = 'text';
+            fnames[3] = 'ADDRESS';
+            ftypes[3] = 'address';
+            fnames[4] = 'PHONE';
+            ftypes[4] = 'phone';
+            fnames[5] = 'BIRTHDAY';
+            ftypes[5] = 'birthday';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
     </script>
     {% endblock %}
 </body>

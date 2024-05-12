@@ -27,6 +27,61 @@ body {
     color: #fff;
 }
 
+/* Newsletter Signup (MailChimp) */
+.newsletter-signup {
+    display: block;
+    max-width: 300px;
+}
+
+.newsletter-signup .email {
+    display: block;
+}
+
+#mc_embed_signup form {
+    margin: 0 !important;
+}
+
+#mc_embed_signup .mc-field-group {
+    width: 100% !important;
+    padding-bottom: 0 !important;
+}
+
+#mc_embed_signup input {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+#mc_embed_signup .foot {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+}
+
+#mc-embedded-subscribe {
+    margin: 0 auto !important;
+}
+
+.mce_inline_error {
+    background-color: #000 !important;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+    border: 2px solid #dc3545 !important;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    color: #dc3545 !important;
+}
+
+#mc_embed_signup div#mce-responses {
+    margin: 0 0 0.5rem 0 !important;
+    padding: 0 !important;
+}
+
+#mc_embed_signup div.response {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
