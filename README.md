@@ -642,3 +642,81 @@ All product images on the website were taken from [easons.com](https://easons.co
         - Select upload and add your image files.
         - Then select to grant public access.
         - And then upload the files.
+
+## Setting up locally
+  - To set the project up locally you can follow these steps.
+    - Download a copy of the repository from Github using the Download Zip option in the code dropdown.
+
+      <div align="center"><img src="readme-images/deployment/deployment-download-repo.png" alt="Image of repository download options in GitHub"></div>
+    
+    - Then extract the zip file to local machine.
+
+    - Alternatively, you can clone it into your repository using the following command.
+        ```
+        git clone https://github.com/DanielleDaly/portfolio-project-5.git
+        ```
+    
+    - Once you have created the repository you can now download the requirements by running the following command:
+        ```
+        pip3 install -r requirements.txt
+        ```
+    
+    - You must then set up the following environment variables to use the full functionality of the site.
+        - DANGO_SECRET_KEY = your secret key.
+        - STRIPE_PUBLIC_KEY = your stripe public key.
+        - STRIPE_SECRET_KEY = your stripe secret key.
+        - STRIPE_WEBHOOK_SECRET = your stripe webhook secret.
+        - DEVELOPMENT = True
+        - Your stripe variables can be found on your stripe dashboard.
+        - You can generate a Django secret key here. [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
+    
+    - You will then need to migrate the database models to set up your database.
+        - Check first
+            ```
+                python3 manage.py makemigrations --dry-run
+            ```
+        -  Then make migrations.
+            ```
+                python3 manage.py makemigrations
+            ```
+        - Check the migration plan
+            ```
+                python3 manage.py migrate --plan
+            ```
+        - Then finally migrate
+            ```
+                python3 manage.py migrate
+            ```
+
+    - Then create your superuser to access the admin section.
+        ```
+        python3 manage.py createsuperuser
+        ```
+        - Follow the prompts.
+
+    - Once these steps have been followed you can then run the project by using the following command.
+        ```
+            python3 manage.py runserver
+        ```
+
+## Credits
+### Content
+- Product images and details
+    - I used [easons.com](https://easons.com) for sourcing all images and product details. I have added the "Get it on easons.com" links to the product pages as a means of giving credit.
+
+- Product reviews
+    - Some of the product reviews are taken from [The Guardian](https://www.theguardian.com) website. I have added the "Read it on The Guardian.com" links to the review pages as a means of giving credit.
+
+- Homepage Hero image
+    - The homepage hero image is from [Unsplash.com](https://unsplash.com). I have made some adjustments to the image.
+
+### General Issues
+- Heroku "IP Address Mismatch" issue
+    - I found there was an issue when logging into Heroku on the Terminal. I found the solution to the issue on [StackOverflow](https://stackoverflow.com/a/70632778)
+
+- Sending emails from Heroku
+    - There was an issue with sending emails over SMTP through Gmail from Heroku caused by the Python version that Heroku assigns by default for apps.
+    - John in Code Institute helped me solve the problem by adding a "runtime.txt" file to the project requiring that Python 3.9.19 is used.
+
+    <div align="center"><img src="readme-images/deployment/python-version-runtime-txt.png" alt="Screenshot of python version issue in Slack"></div>
+
