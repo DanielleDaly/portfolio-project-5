@@ -304,3 +304,54 @@ All product images on the website were taken from [easons.com](https://easons.co
     - When the user enters their delivery and payment details, an overlay is displayed to prevent the user from taking any additional actions until the payment and order creation process is complete.
     <div align="center"><img src="readme-images/screenshots/checkout/checkout-processing-overlay.png" alt="Screenshot of the Checkout Payment Overlay"></div>
     - Once payment is complete and the order has been created, the user is redirected to the Order Confirmation page showing the Order Number, Item List, Delivery Details and the Billing Info.
+
+### Users
+- Account
+    - The navigation link will be updated to "Register / Login" or "My Profile / Logout" depending on whether the user is logged into the website of not.
+    - Super Admin users will also see an additional navigation option "Product Management" when they are logged in.
+    <div align="center"><img src="readme-images/screenshots/users/users-logged-in-super-user.png" alt="Screenshot of the My Account navigation when logged in as a Super Admin user"></div>
+
+- Sign Up / Register
+    - If the user does not already have an account, they can sign up using the link in the main navigation when they click on the "My Account" button.
+    - The Sign Up page also displays a link to the "Login" page in case they landed on the Sign Up page accidentally and just want to log in with their existing account.
+    <div align="center"><img src="readme-images/screenshots/users/users-sign-up-form.png" alt="Screenshot of the Sign Up form on the Register Page"></div>
+
+- Sign In / Login
+    - If the user already has an account, they can login on the Sign In page.
+    - The Sign In page also displays a link to the "Register" page in case they landed on the Sign In page accidentally and want to register for a new account.
+    <div align="center"><img src="readme-images/screenshots/users/users-sign-in.png" alt="Screenshot of the Sign In form on the Login Page"></div>
+
+- Profile Page
+    - The user's Profile Page allows them to set their default shipping information as well as view a list of all of their previous orders on the website.
+    - Clicking on an order in the list redirects the user to the Order Details page.
+    <div align="center"><img src="readme-images/screenshots/users/users-profile-order.png" alt="Screenshot of the User Profile Page"></div>
+
+- Order
+    - The previous order page shows the details of the past order that the user clicked on in their User Profile.
+    - The user will also be shown a notification to say that "This is a past confirmation for order number..."
+    <div align="center"><img src="readme-images/screenshots/users/users-profile-order-notification.png" alt="Screenshot of the User Order Past Confirmation notification message"></div>
+
+### Reviews App
+- Reviews Listing Page
+    - The reviews listing page shows a list of all product reviews available on the website.
+    - Clicking on one of the reviews will bring the user to the review page.
+    <div align="center"><img src="readme-images/screenshots/reviews/reviews-listing.png" alt="Screenshot of the Reviews Listing Page"></div>
+
+- Review Page
+    - The product review page shows the product image, review title, what the review is and the review author.
+    - Following the above detail is the review content.
+    - Below the review there is a Call To Action button encouraging the user to "Buy Now", which redirects to the product page.
+    - Finally, there is a link to "Read it on" the original review source website, or if the review is original content, it is indicated that it is "Original review content by" and the username of the website user who wrote the review.
+    <div align="center"><img src="readme-images/screenshots/reviews/reviews-single.png" alt="Screenshot of a Product Review Page"></div>
+
+### Customer Enquiries
+- Making a Customer Enquiry
+    - Website users can make an enquiry using the form on the "Contact Us" page, which is linked in the main navigation and the footer.
+    - When a user fills in the form and clicks "Send Enquiry" they will receive a notification message confirming that their enquiry was sent, as well as an expectation of when the website admins will respond to their message.
+    <div align="center"><img src="readme-images/screenshots/customer-enquiries/customer-enquiry-form.png" alt="Screenshot of the Customer Enquiry Form"></div>
+    <div align="center"><img src="readme-images/screenshots/customer-enquiries/customer-enquiry-confirmation.png" alt="Screenshot of the Customer Enquiry Confirmation Message"></div>
+
+- Managing Customer Enquiries
+    - Customer Enquiries are managed through the website admin area.
+    - Since only website admins should see the contents of customer enquiries, it would not be viable, from a security point of view, to have a user-facing frontend built to handle enquiries.
+    - However, this may be a consideration for the future if the admin area does not prove sufficient for handling enquiries.
