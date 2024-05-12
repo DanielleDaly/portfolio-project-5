@@ -144,3 +144,30 @@ The project has been deployed to Heroku and can be seen by opening [books-bazaar
 - Database Diagram
     - Below you will see the Database Diagram which shows the structure of the models in the database and the relationships between objects
     <div align="center"><img src="readme-images/database/database-schema.png" alt="Image of the database schema"></div>
+
+## Design
+### Colour Template
+The colours that I have used on the website were inspired by the [influence-society](https://www.influence-society.com/) website. Their colour pallette is modern, clean and accessible.
+
+The monochrome pallette looks great with a single strong accent colour. This avoids any confusion for the user and allowed me to highlight specific page elements easily.
+
+Within the site I have used the pink colour for areas that I want to stand out to users. This includes Call To Action buttons, such as the "Shop Now" and "Browse" category buttons, as well as for product titles.
+
+I have also used the pink colour as the hover state for main navigation links.
+<div align="center"><img src="readme-images/design/colour-pallette.png" alt="Colour swatch of the pallette used in the website design"></div>
+
+### Typography
+The font used on the website is called [Urbanist](https://fonts.google.com/specimen/Urbanist), which is designed by Corey Hu and is available from [Google Fonts](https://fonts.google.com).
+
+I have used this font throughout the site to maintain consistency and build user trust.
+
+Different font colours and weights are used to emphasise items of varying importance to the user.
+
+<div align="center"><img src="readme-images/design/font-urbanist.png" alt="Screenshot of the Urbanist font"></div>
+
+### Images
+Images are a very important element of the website as they help the user to quickly recognise products that they may already be familiar with.
+
+Book covers are also meticulously designed to catch a potential reader's attention. Therefore I wanted to allow the strength of the book covers to do their job in selling the products.
+
+All product images on the website were taken from [easons.com](https://easons.com). The hero image on the homepage was taken from [Unsplash](https://unsplash.com).
