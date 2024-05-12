@@ -10,6 +10,10 @@ body {
     font-family: 'Urbanist';
 }
 
+.header-logo {
+    font-size: 2rem;
+}
+
 .footer {
     width: calc(100% + 2rem);
     margin-left: -1rem;
