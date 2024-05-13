@@ -48,7 +48,7 @@ As a user I can see an error page when I go to a broken link so that I know that
 
 - When entering a URL that does not have a corresponding page on the website, a 404 "Page not found" page is shown.
 - This error page gives an appropriate message and a large button suggesting that the user redirects to the homepage.
-- This has been tested with [https://books-bazaar-08785163d42b.herokuapp.com/testing404](testing404), but any link that does not exist on the website will arrive at the same error page.
+- This has been tested with [https://books-bazaar-08785163d42b.herokuapp.com/testing404](https://books-bazaar-08785163d42b.herokuapp.com/testing404), but any link that does not exist on the website will arrive at the same error page.
 
 ### Product Search
 - [All Products Listing](https://github.com/DanielleDaly/portfolio-project-5/issues/7)
@@ -248,7 +248,7 @@ Steps employed in testing the Edit Product functionality:
 - Observe that I have been redirected to the product's URL and all details are correct
 - Observe the notification that the new product has been edited
 
-#### Edit Product
+#### Delete Product
 Steps employed in testing the Delete Product functionality:
 - Navigate to the Product Details page
 - Click the "Delete" button at the bottom of the product details section
@@ -319,3 +319,20 @@ I tested the website at the different Bootstrap breakpoints as well as by draggi
     - Adding a "Buy Now" link on mobile screens gives the user the affordance that they can click the products to go to the product page.
 - [Bugfix commit](https://github.com/DanielleDaly/portfolio-project-5/commit/67a987ffea0d03356a545568e2d686697c67a8ac)
 
+### Move CSS for reviews background colour out of media query
+- Issue
+    - The CSS `background-color` for the `reviews-list-item` was added inside a media query but it should have been applied on all screen sizes.
+    - Moving the CSS out of the media query applied the styling to the `reviews-list-item` on all screen sizes.
+- [Bugfix commit](https://github.com/DanielleDaly/portfolio-project-5/commit/97c81dd123a8695aa8b06886da74250229a16210)
+
+### Add wrapping ul to li links in mobile navigation
+- Issue
+    - When passing the HTML through a validator it was highlighted that the `<li>` tags on the mobile navigation were not inside a parent `<ul>` tag.
+    - Adding a wrapping `<ul>` resolved this issue, which was then tested with the validator and with manual testing.
+- [Bugfix commit](https://github.com/DanielleDaly/portfolio-project-5/commit/30b767663d167f3089595914e53826c0b2736386)
+
+### Add profile link to button on mobile nav
+- Issue
+    - The Profile URl was missing on the "My Profile" link in the mobile navigation.
+    - Adding the appropriate URL to the `href` attribute fixed the issue.
+- [Bugfix commit](https://github.com/DanielleDaly/portfolio-project-5/commit/7bece7e8372cb3d6f8a3145c169e458290e08a8a)
