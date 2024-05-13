@@ -392,6 +392,10 @@ All product images on the website were taken from [easons.com](https://easons.co
     <div align="center"><img src="readme-images/screenshots/marketing/marketing-facebook-page.jpeg" alt="Mock-up of a Facebook Business Page for Books Bazaar"></div>
 
 
+## Testing
+The testing section of this documentation is available in the [TESTING.md](/TESTING.md) file.
+
+
 ## Technologies used.
 - The application was built using the Django full-stack framework based on the Python programming language.
 - For each section of the website a separate Django app was built.
