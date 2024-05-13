@@ -447,6 +447,9 @@ The testing section of this documentation is available in the [TESTING.md](/TEST
 - [Google Fonts](https://fonts.google.com/)
     - The font, Urbanist, used across the website is imported from Google Fonts.
 
+- [FontAwesome Icons](https://fontawesome.com/)
+    - The icons used throughout the website are from FontAwesome.
+
 - [Bootstrap 4](https://getbootstrap.com/)
     - Bootstrap 4 is used for its grid system, form inputs and its helper and utility classes.
 
