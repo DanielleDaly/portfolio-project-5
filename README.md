@@ -156,13 +156,10 @@ The project has been deployed to Heroku and can be seen by opening [books-bazaar
 ## Wireframes
 - For the initial phase of design for the project I created wireframe layouts using [Balsamiq](https://balsamiq.com/). You can download these wireframes in PDF format but using the appropriate links below:
     - Desktop
-        - [Wireframe layouts for Desktop]()
+        - [Wireframe layouts for Desktop](readme-images/wireframes/BooksBazaar-desktop.pdf)
 
-    - Tablet
-        - [Wireframe layouts for Tablet]()
-
-    - Phone
-        - [Wireframe layouts for Phone]()
+    - Mobile
+        - [Wireframe layouts for Mobile](readme-images/wireframes/BooksBazaar-mobile.pdf)
 
 ## Database Models and Schema
 ### Models
@@ -473,9 +470,6 @@ The testing section of this documentation is available in the [TESTING.md](/TEST
 
 - [Am I responsive](http://ami.responsivedesign.is/)
     - Responsive screenshots of the project were taken using AmIResponsive.
-
-- [Markdown toc](http://ecotrust-canada.github.io/markdown-toc/)
-    - Markdown toc was used to create my table of contents.
 
 ## Deployment
 ### GitHub, GitPod, Git, Heroku and Amazon AWS S3
