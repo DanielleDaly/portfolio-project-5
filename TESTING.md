@@ -311,3 +311,11 @@ I tested the website at the different Bootstrap breakpoints as well as by draggi
 - Lighthouse testing has returned scores of 96% to 100% across the site.
 <div align="center"><img src="readme-images/testing/testing-lighthouse-accessibility-homepage.png" alt="Screenshot of Lighthouse Accessibility results for the Homepage"></div>
 <div align="center"><img src="readme-images/testing/testing-lighthouse-accessibility-reviews.png" alt="Screenshot of Lighthouse Accessibility results for the Reviews page"></div>
+
+## Bugs and Bug Fixes
+### Add Buy Now / Read Review link to products / reviews on small screens
+- Issue
+    - On mobile screens it is not immediately obvious that the products are clickable.
+    - Adding a "Buy Now" link on mobile screens gives the user the affordance that they can click the products to go to the product page.
+- [Bugfix commit](https://github.com/DanielleDaly/portfolio-project-5/commit/67a987ffea0d03356a545568e2d686697c67a8ac)
+
