@@ -186,23 +186,128 @@ As a user I can see an error page when I go to a broken link so that I know that
     - The admin area can be accessed [here](https://books-bazaar-08785163d42b.herokuapp.com/admin/)
 
 ## Defensive Programming and Security
+### Security
+- Environmental variables
+    - For security reasons standard practices have been followed by using os to declare environmental variables for any sensitive information.
+    - For Development, these variables are declared in the settings section of gitpod.
+    - In doing this it means that sensitive information such as passwords and secret keys are not publicly accessible.
+    - To deploy on Heroku these environmental variables are also placed into the settings, config vars section.
 
-- Security
-    - Environmental variables
-        - For security reasons standard practices have been followed by using os to declare environmental variables for any sensitive information.
-        - For Development, these variables are declared in the settings section of gitpod.
-        - In doing this it means that sensitive information such as passwords and secret keys are not publicly accessible.
-        - To deploy on Heroku these environmental variables are also placed into the settings, config vars section.
-
-    - Users passwords.
-        - User sign-up is managed by Django AllAuth, which is a tried and trusted authentication package for the Django framework.
-        - Passwords are saved as a hashed key for security purposes.
-        - User email verification is required by new users when registering.
+- Users passwords.
+    - User sign-up is managed by Django AllAuth, which is a tried and trusted authentication package for the Django framework.
+    - Passwords are saved as a hashed key for security purposes.
+    - User email verification is required by new users when registering.
     
-    - ### Defensive Programming.
-        
-        - Appropriate actions are taken if a user attempts to access URLs or functionality that they should not have access to. 
+### Defensive Programming.        
+- Appropriate actions are taken if a user attempts to access URLs or functionality that they should not have access to. 
 
-        - If for instance the user types in the URL to delete a post the application has been programmed to redirect the user elsewhere and show an appropriate error message. 
+- If for instance the user types in the URL to delete a post the application has been programmed to redirect the user elsewhere and show an appropriate error message. 
 
-        - This functionality has been tested, by typing the URLs into the browser, and can confirm that it works as expected.
+- This functionality has been tested, by typing the URLs into the browser, and can confirm that it works as expected.
+
+## Manual Testing
+All functionality on the website has been tested manually and is working as expected.
+
+### Shopping Bag Functionality
+Steps employed in testing the Shopping Bag functionality:
+- Add a product to the bag
+- Navigate to the Shopping Bag page
+- Update the product quantity
+- Remove the item from the bag
+
+### Checkout Functionality
+Steps employed in testing the Checkout functionality:
+- Add a product to the shopping bag
+- Navigate to the Checkout page
+- Input details on the Checkout form, leaving out some of the required fields to check validation
+- Input the remaining required fields
+- Enter payment details
+    - Card number: 4242 4242 4242 4242
+    - Expiry date: 02/25
+    - CVC number: 123
+- Click "Complete Order" and observe
+- Check that the payment was processed in Stripe Dashboard
+- Check that the Stripe Payment ID matched the PID in the order in the Admin Area of my application
+
+### Website Admin Functionality
+To test the Website Admin functionality, I logged in as an Admin user.
+
+#### Add Product
+Steps employed in testing the Add Product functionality:
+- Navigate to the Product Management URL from the link in the main navigation
+- Input the new product details
+- Save the product
+- Observe that I have been redirected to the new product's URL and all details are correct
+- Observe the notification that the new product has been added
+
+#### Edit Product
+Steps employed in testing the Edit Product functionality:
+- Navigate to the Product Edit by clicking "Edit" on a product details page
+- Edit the product details (Title, description and price)
+- Save the product
+- Observe that I have been redirected to the product's URL and all details are correct
+- Observe the notification that the new product has been edited
+
+#### Edit Product
+Steps employed in testing the Delete Product functionality:
+- Navigate to the Product Details page
+- Click the "Delete" button at the bottom of the product details section
+- Observe that I have been redirected to the "All Products" page and the product is no longer available
+- Observe the notification that the new product has been deleted
+- Check the product listing in the Admin Area to make sure the product has been fully deleted from the database
+- Try searching for the product on the website using the Search bar and observe that the product is not in the search results
+
+### Reviews Functionality
+Steps employed in testing the Reviews functionality:
+- Add a new Review in the Admin Area
+- Navigate to the Reviews section of the website
+- Observe that the new review is available on the Reviews page
+- Observe that the new review is available on the latest Reviews section on the Homepage
+- Click on the Review and observe that the review is readable
+
+### Customer Enquiry Functionality
+Steps employed in testing the Customer Enquiry functionality:
+- Navigate to the Contact Us page on the website
+- Fill out the Customer Enquiry form
+- Observe the notification that my enquiry has been submitted and that the website admin will contact me within 24 hours
+- Observe that the new enquiry is visible in the Customer Enquiries section of the Admin Area
+
+### Newsletter Sign-up Functionality
+Steps employed in testing the Newsletter Sign-up functionality:
+- Scroll down to the Footer of any page on the website
+- Enter my email address and click "Sign Up"
+- Observe the notification that thanking me for signing up
+- Check the "Audience" list in MailChimp and observe that the email address is listed in the account
+
+## Validators
+### HTML
+I passed my CSS through the [HTML code validator](https://validator.w3.org/nu/) and there were no errors found
+<div align="center"><img src="readme-images/testing/validator-html.png" alt="Screenshot of HTML Validator results"></div>
+
+### CSS
+I passed my CSS through the [CSS code validator](https://jigsaw.w3.org/css-validator/) and there were no errors found
+<div align="center"><img src="readme-images/testing/validator-css.png" alt="Screenshot of CSS Validator results"></div>
+
+### Python
+I tested my python code with the Flake8 validator and there were no issues found apart from some line length issues, which is a preference that can be set in the [setup.cfg](/setup.cfg) file and is not an error
+
+## Browser Responsiveness Testing
+I tested the website for responsiveness across a number of devices and browsers.
+Testing was carried out using the Chrome DevTools responsive option.
+
+The browsers I tested the website on were:
+- Chrome
+- Firefox
+- Safari
+- Edge
+- Brave Browser
+
+I tested the website at the different Bootstrap breakpoints as well as by dragging the screen width to test sizes in between breakpoints.
+
+## Accessibility
+- The site has been tested for Accessibility using Google Chrome Lighthouse.
+- After testing I made a number of changes including updating heading tags to be in the correct order, as well as adding the appropriate ARIA labels to elements.
+- All images have descriptive alt tags.
+- Lighthouse testing has returned scores of 96% to 100% across the site.
+<div align="center"><img src="readme-images/testing/testing-lighthouse-accessibility-homepage.png" alt="Screenshot of Lighthouse Accessibility results for the Homepage"></div>
+<div align="center"><img src="readme-images/testing/testing-lighthouse-accessibility-reviews.png" alt="Screenshot of Lighthouse Accessibility results for the Reviews page"></div>

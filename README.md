@@ -16,7 +16,7 @@ The aim of this project is to build a full-stack web application using Django (t
     - For completing purchases the below credit card details should be used:
         - Card number: 4242 4242 4242 4242 or 4000 0025 0000 3155 (Will prompt for purchase verification)
         - Any date in the future
-        - Any CVV security number
+        - Any CVC security number
 
 ## Live Project URL
 The project has been deployed to Heroku and can be seen by opening [books-bazaar-08785163d42b.herokuapp.com](https://books-bazaar-08785163d42b.herokuapp.com/) in a web browser.
